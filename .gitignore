@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+/.vs
+/Project1/.vs/Project1
+/조건문 실습/x64/Debug
+/조건문 실습/조건문 실습/x64/Debug
+/조건문 실습/.vs
+/Project1
