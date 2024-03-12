@@ -1,24 +1,26 @@
 #include <stdio.h>
 #include <conio.h>
 
+//í…ŒìŠ¤íŠ¸
+
 int day03();
-void day04();	//ÇÔ¼ö ¼±¾ğ(ÇÔ¼öÀÇ ÇÁ·ÎÅäÅ¸ÀÔ)
+void day04();	//í•¨ìˆ˜ ì„ ì–¸(í•¨ìˆ˜ì˜ í”„ë¡œí† íƒ€ì…)
 
 int day03(void) {
 
 	char* str[] = { "Zero", "One", "Two", "Three", "Four",
-		"Five", "Six", "Seven", "Eight", "Nine" }; // ¹®ÀÚ¿­ Æ÷ÀÎÅÍ(*) ¹è¿­ ¼±¾ğ
+		"Five", "Six", "Seven", "Eight", "Nine" }; // ë¬¸ìì—´ í¬ì¸í„°(*) ë°°ì—´ ì„ ì–¸
 
-	printf("¼ıÀÚÅ°¸¦ ÀÔ·ÂÇÏ¸é ÇØ´ç ¿µ´Ü¾î¸¦ Ç¥½ÃÇÕ´Ï´Ù.(x´Â Á¾·á)\n");
+	printf("ìˆ«ìí‚¤ë¥¼ ì…ë ¥í•˜ë©´ í•´ë‹¹ ì˜ë‹¨ì–´ë¥¼ í‘œì‹œí•©ë‹ˆë‹¤.(xëŠ” ì¢…ë£Œ)\n");
 	while (1) {
 		printf(">");
 		char c = getch();
 		printf("%c\n", c);
 		
-		if (c == 'x' || c == 'X') break;//c | 0x20 == 'x'·Î Á¶°Ç ³Ö¾îµµ ÀÛµ¿. c | 0x20À» ÅëÇØ ÀÔ·Â °ªÀ» ¼Ò¹®ÀÚ·Î º¯È¯
+		if (c == 'x' || c == 'X') break;//c | 0x20 == 'x'ë¡œ ì¡°ê±´ ë„£ì–´ë„ ì‘ë™. c | 0x20ì„ í†µí•´ ì…ë ¥ ê°’ì„ ì†Œë¬¸ìë¡œ ë³€í™˜
 
-		int m = c - 0x30; //ASCII -> num°ª
-		printf("%c: %s\n", c, str[m]); //ÀÔ·Â °ªc: strÀÇ m¹øÂ° °ª.
+		int m = c - 0x30; //ASCII -> numê°’
+		printf("%c: %s\n", c, str[m]); //ì…ë ¥ ê°’c: strì˜ më²ˆì§¸ ê°’.
 
 		/*switch (c) {
 		case '1':	printf("One\n");	break;
@@ -31,13 +33,13 @@ int day03(void) {
 		case '8':	printf("Eight\n");	break;
 		case '9':	printf("Nine\n");	break;
 		case '0':	printf("Zero\n");	break;
-		default:	printf("¼ıÀÚ°¡ ¾Æ´Õ´Ï´Ù.\n");	break;
+		default:	printf("ìˆ«ìê°€ ì•„ë‹™ë‹ˆë‹¤.\n");	break;
 		}*/
 		printf("\n");
 	}
 }
 
-void day04(void) {		//¹®ÀÚ¿­°ú ¹®ÀÚ¹è¿­
+void day04(void) {		//ë¬¸ìì—´ê³¼ ë¬¸ìë°°ì—´
 	char ca[] = "Hello";	//ca[0] = 'H', ..., ca[4] = 'o', ca[5] = null(\0)
 	for (int i = 0; i < 6; i++) {
 		printf("ca[%d]: %c (%02x)\n", i, ca[i], ca[i]);
