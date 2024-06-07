@@ -1,0 +1,244 @@
+
+test01.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000017c  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000128  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000017c  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000001ac  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000028  00000000  00000000  000001e8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000936  00000000  00000000  00000210  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000084a  00000000  00000000  00000b46  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002dc  00000000  00000000  00001390  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000034  00000000  00000000  0000166c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000040e  00000000  00000000  000016a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000125  00000000  00000000  00001aae  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000038  00000000  00000000  00001bd3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	25 d0       	rcall	.+74     	; 0xe4 <main>
+  9a:	44 c0       	rjmp	.+136    	; 0x124 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <togglepinA>:
+
+#include <avr/io.h>
+#include <avr/delay.h>				//delay를 실행하기 위한 헤더파일
+
+void togglepinA(int n){				//n: n번째 비트, dl: delay in mili-second
+	char b = 1 << n;				//n번만큼 비트를 왼쪽으로 이동하라 (n이 1이면 10이 되어 2, n이 2이면 100이 되어 4 표현)
+  9e:	21 e0       	ldi	r18, 0x01	; 1
+  a0:	30 e0       	ldi	r19, 0x00	; 0
+  a2:	a9 01       	movw	r20, r18
+  a4:	02 c0       	rjmp	.+4      	; 0xaa <togglepinA+0xc>
+  a6:	44 0f       	add	r20, r20
+  a8:	55 1f       	adc	r21, r21
+  aa:	8a 95       	dec	r24
+  ac:	e2 f7       	brpl	.-8      	; 0xa6 <togglepinA+0x8>
+  ae:	ca 01       	movw	r24, r20
+	PORTA |= b;						//위의 식을 따라 b번째 비트를 HIGH로 출력
+  b0:	9b b3       	in	r25, 0x1b	; 27
+  b2:	98 2b       	or	r25, r24
+  b4:	9b bb       	out	0x1b, r25	; 27
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  b6:	5f ef       	ldi	r21, 0xFF	; 255
+  b8:	29 e6       	ldi	r18, 0x69	; 105
+  ba:	38 e1       	ldi	r19, 0x18	; 24
+  bc:	51 50       	subi	r21, 0x01	; 1
+  be:	20 40       	sbci	r18, 0x00	; 0
+  c0:	30 40       	sbci	r19, 0x00	; 0
+  c2:	e1 f7       	brne	.-8      	; 0xbc <togglepinA+0x1e>
+  c4:	00 c0       	rjmp	.+0      	; 0xc6 <togglepinA+0x28>
+  c6:	00 00       	nop
+	_delay_ms(500);
+	PORTA &= ~b;					//Port A의 최하위비트(0번째 비트)를 0(LOW)로 설정}
+  c8:	9b b3       	in	r25, 0x1b	; 27
+  ca:	80 95       	com	r24
+  cc:	89 23       	and	r24, r25
+  ce:	8b bb       	out	0x1b, r24	; 27
+  d0:	4f ef       	ldi	r20, 0xFF	; 255
+  d2:	59 e6       	ldi	r21, 0x69	; 105
+  d4:	88 e1       	ldi	r24, 0x18	; 24
+  d6:	41 50       	subi	r20, 0x01	; 1
+  d8:	50 40       	sbci	r21, 0x00	; 0
+  da:	80 40       	sbci	r24, 0x00	; 0
+  dc:	e1 f7       	brne	.-8      	; 0xd6 <togglepinA+0x38>
+  de:	00 c0       	rjmp	.+0      	; 0xe0 <togglepinA+0x42>
+  e0:	00 00       	nop
+  e2:	08 95       	ret
+
+000000e4 <main>:
+	_delay_ms(500);
+}
+
+int main(void)
+{
+	DDRA |= 0x07;					//A port의 0번째 비트(PA0), 1번째 비트, 2번째 비트를 출력용(1)으로 사용(0000 0011), 나머지는 입력용(0)
+  e4:	8a b3       	in	r24, 0x1a	; 26
+  e6:	87 60       	ori	r24, 0x07	; 7
+  e8:	8a bb       	out	0x1a, r24	; 26
+	DDRB &= ~0x01;					//B port의 0번째 비트는 입력용(0)으로, 나머지는 출력용(1)로 설정 (1111 1110 = NOT 0000 0001)
+  ea:	87 b3       	in	r24, 0x17	; 23
+  ec:	8e 7f       	andi	r24, 0xFE	; 254
+  ee:	87 bb       	out	0x17, r24	; 23
+
+	int mode = 0; //mode0 Green, mode1 Yellow, mode2 Red LED 점멸
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	10 e0       	ldi	r17, 0x00	; 0
+  f4:	02 c0       	rjmp	.+4      	; 0xfa <main+0x16>
+			while(on == 1){
+				togglepinA(mode);			//0번째 비트(LED)를 점멸
+				if(!(PINB & 0x01 == 1)) on = 0;
+			}
+			mode++;
+			if (mode>2) mode=0;			//2번째 LED 점멸 후 다시 0번째부터 실행해야 하므로 i 초기화
+  f6:	00 e0       	ldi	r16, 0x00	; 0
+  f8:	10 e0       	ldi	r17, 0x00	; 0
+	
+	while (1)
+	{
+		
+		
+		if(!(PINB & 0x01 == 1)){		//B port의 0번 비트의 값이 0이라면(스위치가 눌리면)
+  fa:	b0 99       	sbic	0x16, 0	; 22
+  fc:	fe cf       	rjmp	.-4      	; 0xfa <main+0x16>
+  fe:	07 c0       	rjmp	.+14     	; 0x10e <main+0x2a>
+			int on = 1;
+			while(on == 1){
+				togglepinA(mode);			//0번째 비트(LED)를 점멸
+ 100:	c8 01       	movw	r24, r16
+ 102:	cd df       	rcall	.-102    	; 0x9e <togglepinA>
+				if(!(PINB & 0x01 == 1)) on = 0;
+ 104:	b0 99       	sbic	0x16, 0	; 22
+ 106:	05 c0       	rjmp	.+10     	; 0x112 <main+0x2e>
+ 108:	c0 e0       	ldi	r28, 0x00	; 0
+ 10a:	d0 e0       	ldi	r29, 0x00	; 0
+ 10c:	02 c0       	rjmp	.+4      	; 0x112 <main+0x2e>
+ 10e:	c1 e0       	ldi	r28, 0x01	; 1
+ 110:	d0 e0       	ldi	r29, 0x00	; 0
+	{
+		
+		
+		if(!(PINB & 0x01 == 1)){		//B port의 0번 비트의 값이 0이라면(스위치가 눌리면)
+			int on = 1;
+			while(on == 1){
+ 112:	c1 30       	cpi	r28, 0x01	; 1
+ 114:	d1 05       	cpc	r29, r1
+ 116:	a1 f3       	breq	.-24     	; 0x100 <main+0x1c>
+				togglepinA(mode);			//0번째 비트(LED)를 점멸
+				if(!(PINB & 0x01 == 1)) on = 0;
+			}
+			mode++;
+ 118:	0f 5f       	subi	r16, 0xFF	; 255
+ 11a:	1f 4f       	sbci	r17, 0xFF	; 255
+			if (mode>2) mode=0;			//2번째 LED 점멸 후 다시 0번째부터 실행해야 하므로 i 초기화
+ 11c:	03 30       	cpi	r16, 0x03	; 3
+ 11e:	11 05       	cpc	r17, r1
+ 120:	54 f7       	brge	.-44     	; 0xf6 <main+0x12>
+ 122:	eb cf       	rjmp	.-42     	; 0xfa <main+0x16>
+
+00000124 <_exit>:
+ 124:	f8 94       	cli
+
+00000126 <__stop_program>:
+ 126:	ff cf       	rjmp	.-2      	; 0x126 <__stop_program>

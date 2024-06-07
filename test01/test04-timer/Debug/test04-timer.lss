@@ -1,0 +1,1587 @@
+
+test04-timer.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000002c  00800100  00000a90  00000b24  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000a90  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          0000001d  0080012c  0080012c  00000b50  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000b50  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000b80  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000090  00000000  00000000  00000bbc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00001247  00000000  00000000  00000c4c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000a96  00000000  00000000  00001e93  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000008cd  00000000  00000000  00002929  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000001d0  00000000  00000000  000031f8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000508  00000000  00000000  000033c8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000b36  00000000  00000000  000038d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000070  00000000  00000000  00004406  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	60 c0       	rjmp	.+192    	; 0xc6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	5e c0       	rjmp	.+188    	; 0xc6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	5c c0       	rjmp	.+184    	; 0xc6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	5a c0       	rjmp	.+180    	; 0xc6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	52 c3       	rjmp	.+1700   	; 0x6ba <__vector_5>
+  16:	00 00       	nop
+  18:	7a c3       	rjmp	.+1780   	; 0x70e <__vector_6>
+  1a:	00 00       	nop
+  1c:	8f c3       	rjmp	.+1822   	; 0x73c <__vector_7>
+  1e:	00 00       	nop
+  20:	52 c0       	rjmp	.+164    	; 0xc6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	50 c0       	rjmp	.+160    	; 0xc6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	4e c0       	rjmp	.+156    	; 0xc6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	4c c0       	rjmp	.+152    	; 0xc6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	4a c0       	rjmp	.+148    	; 0xc6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	48 c0       	rjmp	.+144    	; 0xc6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	c2 c3       	rjmp	.+1924   	; 0x7be <__vector_14>
+  3a:	00 00       	nop
+  3c:	44 c0       	rjmp	.+136    	; 0xc6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	42 c0       	rjmp	.+132    	; 0xc6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	40 c0       	rjmp	.+128    	; 0xc6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	3e c0       	rjmp	.+124    	; 0xc6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	3c c0       	rjmp	.+120    	; 0xc6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	3a c0       	rjmp	.+116    	; 0xc6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	38 c0       	rjmp	.+112    	; 0xc6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	36 c0       	rjmp	.+108    	; 0xc6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	34 c0       	rjmp	.+104    	; 0xc6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	32 c0       	rjmp	.+100    	; 0xc6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	30 c0       	rjmp	.+96     	; 0xc6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	2e c0       	rjmp	.+92     	; 0xc6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	2c c0       	rjmp	.+88     	; 0xc6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	2a c0       	rjmp	.+84     	; 0xc6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	28 c0       	rjmp	.+80     	; 0xc6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	26 c0       	rjmp	.+76     	; 0xc6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	24 c0       	rjmp	.+72     	; 0xc6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	22 c0       	rjmp	.+68     	; 0xc6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	20 c0       	rjmp	.+64     	; 0xc6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	1e c0       	rjmp	.+60     	; 0xc6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e0 e9       	ldi	r30, 0x90	; 144
+  a0:	fa e0       	ldi	r31, 0x0A	; 10
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	ac 32       	cpi	r26, 0x2C	; 44
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	21 e0       	ldi	r18, 0x01	; 1
+  b4:	ac e2       	ldi	r26, 0x2C	; 44
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a9 34       	cpi	r26, 0x49	; 73
+  be:	b2 07       	cpc	r27, r18
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	33 d0       	rcall	.+102    	; 0x12a <main>
+  c4:	e3 c4       	rjmp	.+2502   	; 0xa8c <_exit>
+
+000000c6 <__bad_interrupt>:
+  c6:	9c cf       	rjmp	.-200    	; 0x0 <__vectors>
+
+000000c8 <blinknum.1754>:
+	
+	int time;	
+	int min10, min1, sec10, sec1;
+
+	//timesarr배열과 timesinit배열이 번갈아 표시되며 숫자의 깜빡임을 제어하는 함수
+	void blinknum(void){					
+  c8:	cf 93       	push	r28
+  ca:	df 93       	push	r29
+			for (int t = 0; t < 50; t++){
+  cc:	c0 e0       	ldi	r28, 0x00	; 0
+  ce:	d0 e0       	ldi	r29, 0x00	; 0
+  d0:	0a c0       	rjmp	.+20     	; 0xe6 <blinknum.1754+0x1e>
+				FND_4(timearr);				
+  d2:	84 e0       	ldi	r24, 0x04	; 4
+  d4:	91 e0       	ldi	r25, 0x01	; 1
+  d6:	fe d3       	rcall	.+2044   	; 0x8d4 <FND_4>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  d8:	8f e9       	ldi	r24, 0x9F	; 159
+  da:	9f e0       	ldi	r25, 0x0F	; 15
+  dc:	01 97       	sbiw	r24, 0x01	; 1
+  de:	f1 f7       	brne	.-4      	; 0xdc <blinknum.1754+0x14>
+  e0:	00 c0       	rjmp	.+0      	; 0xe2 <blinknum.1754+0x1a>
+  e2:	00 00       	nop
+	int time;	
+	int min10, min1, sec10, sec1;
+
+	//timesarr배열과 timesinit배열이 번갈아 표시되며 숫자의 깜빡임을 제어하는 함수
+	void blinknum(void){					
+			for (int t = 0; t < 50; t++){
+  e4:	21 96       	adiw	r28, 0x01	; 1
+  e6:	c2 33       	cpi	r28, 0x32	; 50
+  e8:	d1 05       	cpc	r29, r1
+  ea:	9c f3       	brlt	.-26     	; 0xd2 <blinknum.1754+0xa>
+  ec:	8f e3       	ldi	r24, 0x3F	; 63
+  ee:	9c e9       	ldi	r25, 0x9C	; 156
+  f0:	01 97       	sbiw	r24, 0x01	; 1
+  f2:	f1 f7       	brne	.-4      	; 0xf0 <blinknum.1754+0x28>
+  f4:	00 c0       	rjmp	.+0      	; 0xf6 <blinknum.1754+0x2e>
+  f6:	00 00       	nop
+				FND_4(timearr);				
+				_delay_ms(1);
+			}
+			_delay_ms(10);
+			for (int t = 0; t < 50; t++){
+  f8:	c0 e0       	ldi	r28, 0x00	; 0
+  fa:	d0 e0       	ldi	r29, 0x00	; 0
+  fc:	0a c0       	rjmp	.+20     	; 0x112 <blinknum.1754+0x4a>
+				FND_4(timeinit);			
+  fe:	80 e0       	ldi	r24, 0x00	; 0
+ 100:	91 e0       	ldi	r25, 0x01	; 1
+ 102:	e8 d3       	rcall	.+2000   	; 0x8d4 <FND_4>
+ 104:	8f e9       	ldi	r24, 0x9F	; 159
+ 106:	9f e0       	ldi	r25, 0x0F	; 15
+ 108:	01 97       	sbiw	r24, 0x01	; 1
+ 10a:	f1 f7       	brne	.-4      	; 0x108 <blinknum.1754+0x40>
+ 10c:	00 c0       	rjmp	.+0      	; 0x10e <blinknum.1754+0x46>
+ 10e:	00 00       	nop
+			for (int t = 0; t < 50; t++){
+				FND_4(timearr);				
+				_delay_ms(1);
+			}
+			_delay_ms(10);
+			for (int t = 0; t < 50; t++){
+ 110:	21 96       	adiw	r28, 0x01	; 1
+ 112:	c2 33       	cpi	r28, 0x32	; 50
+ 114:	d1 05       	cpc	r29, r1
+ 116:	9c f3       	brlt	.-26     	; 0xfe <blinknum.1754+0x36>
+ 118:	8f e3       	ldi	r24, 0x3F	; 63
+ 11a:	9c e9       	ldi	r25, 0x9C	; 156
+ 11c:	01 97       	sbiw	r24, 0x01	; 1
+ 11e:	f1 f7       	brne	.-4      	; 0x11c <blinknum.1754+0x54>
+ 120:	00 c0       	rjmp	.+0      	; 0x122 <blinknum.1754+0x5a>
+ 122:	00 00       	nop
+				FND_4(timeinit);			
+				_delay_ms(1);
+			}
+			_delay_ms(10);
+	}
+ 124:	df 91       	pop	r29
+ 126:	cf 91       	pop	r28
+ 128:	08 95       	ret
+
+0000012a <main>:
+	
+int main(void)
+{	
+	//기본 설정 묶음
+	{
+	SegPortSet(&PORTD, &PORTC);
+ 12a:	65 e3       	ldi	r22, 0x35	; 53
+ 12c:	70 e0       	ldi	r23, 0x00	; 0
+ 12e:	82 e3       	ldi	r24, 0x32	; 50
+ 130:	90 e0       	ldi	r25, 0x00	; 0
+ 132:	a1 d3       	rcall	.+1858   	; 0x876 <SegPortSet>
+	Interrupt 사용	: INT4~INT6 (External Interrupt)
+	Pin assign	: PE4~PE6
+	*/
+
+	//인터럽트 설정
+	EIMSK = 0x70;							//0111 0000	//INT 4~INT 6 활성화
+ 134:	80 e7       	ldi	r24, 0x70	; 112
+ 136:	89 bf       	out	0x39, r24	; 57
+	EICRB = 0x2a;							//4개의 B그룹(INT4~INT7)의 인터럽트 발생 시점 결정(00 10 10 10, 각 7 6 5 4에서의 INT발생 시점을 rising edge로 결정)
+ 138:	8a e2       	ldi	r24, 0x2A	; 42
+ 13a:	8a bf       	out	0x3a, r24	; 58
+	DDRD = 0XFF;							//D포트의 모든 비트를 출력으로 설정
+ 13c:	8f ef       	ldi	r24, 0xFF	; 255
+ 13e:	81 bb       	out	0x11, r24	; 17
+	DDRC = 0X0F;							//D포트의 네개 비트를 출력으로 설정
+ 140:	8f e0       	ldi	r24, 0x0F	; 15
+ 142:	84 bb       	out	0x14, r24	; 20
+	DDRE = 0x00;
+ 144:	12 b8       	out	0x02, r1	; 2
+	DDRA |= 0x80;							//A포트의 7번 비트를 출력으로 설정
+ 146:	8a b3       	in	r24, 0x1a	; 26
+ 148:	80 68       	ori	r24, 0x80	; 128
+ 14a:	8a bb       	out	0x1a, r24	; 26
+	
+	TIMSK |= 0x04;							//Timer Interrupt Mask을 0000 0100b로 설정하여 오버플로 인터럽트 활성화 [Timer 1 TCNT Overflow interrupt] 
+ 14c:	87 b7       	in	r24, 0x37	; 55
+ 14e:	84 60       	ori	r24, 0x04	; 4
+ 150:	87 bf       	out	0x37, r24	; 55
+    //TIMSK |= 0x01;						//Timer Interrupt Mask을 0000 0001b로 설정하여 오버플로 인터럽트 활성화 [Timer 0 TCNT Overflow interrupt] 
+	//TIMSK |= 0x40;						//Timer Interrupt Mask을 0000 0001b로 설정하여 오버플로 인터럽트 활성화 [Timer 2 TCNT Overflow interrupt] 
+	TCCR1B |= 0x04;							//16KHz를 구하기 위해 분주비 (Pre-Scaler) 64 필요 -> 비트를 0000 0100b로 설정 (타이머 1에 대한 분주기가 256)
+ 152:	8e b5       	in	r24, 0x2e	; 46
+ 154:	84 60       	ori	r24, 0x04	; 4
+ 156:	8e bd       	out	0x2e, r24	; 46
+	//TCCR0 |= 0x04;						//16KHz를 구하기 위해 분주비 (Pre-Scaler) 64 필요 -> 비트를 0000 0100b로 설정 (타이머 0에 대한 분주기)
+	//TCCR2 |= 0x04; 						//16KHz를 구하기 위해 분주비 (Pre-Scaler) 64 필요 -> 비트를 0000 0100b로 설정 (타이머 2에 대한 분주기)
+	SREG |= 0x80;
+ 158:	8f b7       	in	r24, 0x3f	; 63
+ 15a:	80 68       	ori	r24, 0x80	; 128
+ 15c:	8f bf       	out	0x3f, r24	; 63
+	sei();
+ 15e:	78 94       	sei
+			_delay_ms(10);
+	}
+	
+    while (1) 
+    {				
+		switch (mode){														//처음 시작하면 mode가 0이므로 초기 시간 설정화면 코드
+ 160:	80 91 2e 01 	lds	r24, 0x012E	; 0x80012e <mode>
+ 164:	90 91 2f 01 	lds	r25, 0x012F	; 0x80012f <mode+0x1>
+ 168:	00 97       	sbiw	r24, 0x00	; 0
+ 16a:	21 f0       	breq	.+8      	; 0x174 <main+0x4a>
+ 16c:	01 97       	sbiw	r24, 0x01	; 1
+ 16e:	09 f4       	brne	.+2      	; 0x172 <main+0x48>
+ 170:	95 c1       	rjmp	.+810    	; 0x49c <__LOCK_REGION_LENGTH__+0x9c>
+ 172:	f6 cf       	rjmp	.-20     	; 0x160 <main+0x36>
+			case 0:															//처음 시간 설정 모드
+				switch(settimeth){
+ 174:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <settimeth>
+ 178:	90 91 41 01 	lds	r25, 0x0141	; 0x800141 <settimeth+0x1>
+ 17c:	81 30       	cpi	r24, 0x01	; 1
+ 17e:	91 05       	cpc	r25, r1
+ 180:	09 f4       	brne	.+2      	; 0x184 <main+0x5a>
+ 182:	65 c0       	rjmp	.+202    	; 0x24e <main+0x124>
+ 184:	1c f4       	brge	.+6      	; 0x18c <main+0x62>
+ 186:	89 2b       	or	r24, r25
+ 188:	49 f0       	breq	.+18     	; 0x19c <main+0x72>
+ 18a:	ea cf       	rjmp	.-44     	; 0x160 <main+0x36>
+ 18c:	82 30       	cpi	r24, 0x02	; 2
+ 18e:	91 05       	cpc	r25, r1
+ 190:	09 f4       	brne	.+2      	; 0x194 <main+0x6a>
+ 192:	bf c0       	rjmp	.+382    	; 0x312 <main+0x1e8>
+ 194:	03 97       	sbiw	r24, 0x03	; 3
+ 196:	09 f4       	brne	.+2      	; 0x19a <main+0x70>
+ 198:	1f c1       	rjmp	.+574    	; 0x3d8 <main+0x2ae>
+ 19a:	e2 cf       	rjmp	.-60     	; 0x160 <main+0x36>
+					case 0:													//10분 단위 설정
+						timeup = 0; timedown = 0;							//up,down 버튼 눌린 횟수 0으로 초기화
+ 19c:	10 92 3d 01 	sts	0x013D, r1	; 0x80013d <timeup+0x1>
+ 1a0:	10 92 3c 01 	sts	0x013C, r1	; 0x80013c <timeup>
+ 1a4:	10 92 3b 01 	sts	0x013B, r1	; 0x80013b <timedown+0x1>
+ 1a8:	10 92 3a 01 	sts	0x013A, r1	; 0x80013a <timedown>
+						timeinit[3] = 0;									//선택 자릿수 깜빡이도록 0으로 배열 설정
+ 1ac:	10 92 03 01 	sts	0x0103, r1	; 0x800103 <__DATA_REGION_ORIGIN__+0x3>
+						while(1){
+							time = timeup - timedown;
+ 1b0:	c0 91 3c 01 	lds	r28, 0x013C	; 0x80013c <timeup>
+ 1b4:	d0 91 3d 01 	lds	r29, 0x013D	; 0x80013d <timeup+0x1>
+ 1b8:	80 91 3a 01 	lds	r24, 0x013A	; 0x80013a <timedown>
+ 1bc:	90 91 3b 01 	lds	r25, 0x013B	; 0x80013b <timedown+0x1>
+ 1c0:	c8 1b       	sub	r28, r24
+ 1c2:	d9 0b       	sbc	r29, r25
+						
+							if(timeup == 0){								//timeup이 0이면 버튼을 누르지 않았으므로 - 표시
+ 1c4:	80 91 3c 01 	lds	r24, 0x013C	; 0x80013c <timeup>
+ 1c8:	90 91 3d 01 	lds	r25, 0x013D	; 0x80013d <timeup+0x1>
+ 1cc:	89 2b       	or	r24, r25
+ 1ce:	39 f4       	brne	.+14     	; 0x1de <main+0xb4>
+								timearr[3] = numb[time];
+ 1d0:	c8 5f       	subi	r28, 0xF8	; 248
+ 1d2:	de 4f       	sbci	r29, 0xFE	; 254
+ 1d4:	88 81       	ld	r24, Y
+ 1d6:	80 93 07 01 	sts	0x0107, r24	; 0x800107 <timearr+0x3>
+								 blinknum();
+ 1da:	76 df       	rcall	.-276    	; 0xc8 <blinknum.1754>
+ 1dc:	e9 cf       	rjmp	.-46     	; 0x1b0 <main+0x86>
+							}
+							else{											//timeup이 0이 아니면 버튼을 눌렀으므로 화면에 숫자 표시
+								if ( time > 9) time = 9;					//10분 단위는 9이상 올라갈 수 없으므로 최댓값 9로 설정
+ 1de:	ca 30       	cpi	r28, 0x0A	; 10
+ 1e0:	d1 05       	cpc	r29, r1
+ 1e2:	14 f0       	brlt	.+4      	; 0x1e8 <main+0xbe>
+ 1e4:	c9 e0       	ldi	r28, 0x09	; 9
+ 1e6:	d0 e0       	ldi	r29, 0x00	; 0
+								if ( time <= 0) time = 0;					//시간은 0 이하 내려갈 수 없으므로 최솟값 0로 설정
+ 1e8:	1c 16       	cp	r1, r28
+ 1ea:	1d 06       	cpc	r1, r29
+ 1ec:	14 f0       	brlt	.+4      	; 0x1f2 <main+0xc8>
+ 1ee:	c0 e0       	ldi	r28, 0x00	; 0
+ 1f0:	d0 e0       	ldi	r29, 0x00	; 0
+							
+								timearr[3] = numb[time];
+ 1f2:	fe 01       	movw	r30, r28
+ 1f4:	e8 5f       	subi	r30, 0xF8	; 248
+ 1f6:	fe 4f       	sbci	r31, 0xFE	; 254
+ 1f8:	80 81       	ld	r24, Z
+ 1fa:	80 93 07 01 	sts	0x0107, r24	; 0x800107 <timearr+0x3>
+								blinknum();
+ 1fe:	64 df       	rcall	.-312    	; 0xc8 <blinknum.1754>
+								if(complete == 1){							//sw3을 누르면 탈출, 다음 숫자로 넘김
+ 200:	80 91 38 01 	lds	r24, 0x0138	; 0x800138 <complete>
+ 204:	90 91 39 01 	lds	r25, 0x0139	; 0x800139 <complete+0x1>
+ 208:	01 97       	sbiw	r24, 0x01	; 1
+ 20a:	91 f6       	brne	.-92     	; 0x1b0 <main+0x86>
+									timearr[3] = numb[time];
+ 20c:	fe 01       	movw	r30, r28
+ 20e:	e8 5f       	subi	r30, 0xF8	; 248
+ 210:	fe 4f       	sbci	r31, 0xFE	; 254
+ 212:	80 81       	ld	r24, Z
+ 214:	80 93 07 01 	sts	0x0107, r24	; 0x800107 <timearr+0x3>
+ 218:	8f e3       	ldi	r24, 0x3F	; 63
+ 21a:	9c e9       	ldi	r25, 0x9C	; 156
+ 21c:	01 97       	sbiw	r24, 0x01	; 1
+ 21e:	f1 f7       	brne	.-4      	; 0x21c <main+0xf2>
+ 220:	00 c0       	rjmp	.+0      	; 0x222 <main+0xf8>
+ 222:	00 00       	nop
+ 224:	9f ef       	ldi	r25, 0xFF	; 255
+ 226:	21 ee       	ldi	r18, 0xE1	; 225
+ 228:	84 e0       	ldi	r24, 0x04	; 4
+ 22a:	91 50       	subi	r25, 0x01	; 1
+ 22c:	20 40       	sbci	r18, 0x00	; 0
+ 22e:	80 40       	sbci	r24, 0x00	; 0
+ 230:	e1 f7       	brne	.-8      	; 0x22a <main+0x100>
+ 232:	00 c0       	rjmp	.+0      	; 0x234 <main+0x10a>
+ 234:	00 00       	nop
+									break;
+								}
+							}
+					}
+					_delay_ms(100);
+					complete = 0;
+ 236:	10 92 39 01 	sts	0x0139, r1	; 0x800139 <complete+0x1>
+ 23a:	10 92 38 01 	sts	0x0138, r1	; 0x800138 <complete>
+					settimeth = 1;
+ 23e:	81 e0       	ldi	r24, 0x01	; 1
+ 240:	90 e0       	ldi	r25, 0x00	; 0
+ 242:	90 93 41 01 	sts	0x0141, r25	; 0x800141 <settimeth+0x1>
+ 246:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <settimeth>
+								timearr[3] = numb[time];
+								blinknum();
+								if(complete == 1){							//sw3을 누르면 탈출, 다음 숫자로 넘김
+									timearr[3] = numb[time];
+									_delay_ms(10);
+									min10 = time;
+ 24a:	7e 01       	movw	r14, r28
+							}
+					}
+					_delay_ms(100);
+					complete = 0;
+					settimeth = 1;
+					break;
+ 24c:	89 cf       	rjmp	.-238    	; 0x160 <main+0x36>
+					
+					
+					case 1:	//1분 단위 설정
+						timeup = 0; timedown = 0;
+ 24e:	10 92 3d 01 	sts	0x013D, r1	; 0x80013d <timeup+0x1>
+ 252:	10 92 3c 01 	sts	0x013C, r1	; 0x80013c <timeup>
+ 256:	10 92 3b 01 	sts	0x013B, r1	; 0x80013b <timedown+0x1>
+ 25a:	10 92 3a 01 	sts	0x013A, r1	; 0x80013a <timedown>
+						timeinit[2] = 0x80;									//선택 자릿수 깜빡이도록 0으로 배열 설정
+ 25e:	e0 e0       	ldi	r30, 0x00	; 0
+ 260:	f1 e0       	ldi	r31, 0x01	; 1
+ 262:	80 e8       	ldi	r24, 0x80	; 128
+ 264:	82 83       	std	Z+2, r24	; 0x02
+						timeinit[3] = numb[time];
+ 266:	c8 5f       	subi	r28, 0xF8	; 248
+ 268:	de 4f       	sbci	r29, 0xFE	; 254
+ 26a:	88 81       	ld	r24, Y
+ 26c:	83 83       	std	Z+3, r24	; 0x03
+						while(1){
+							time = timeup - timedown;
+ 26e:	c0 91 3c 01 	lds	r28, 0x013C	; 0x80013c <timeup>
+ 272:	d0 91 3d 01 	lds	r29, 0x013D	; 0x80013d <timeup+0x1>
+ 276:	80 91 3a 01 	lds	r24, 0x013A	; 0x80013a <timedown>
+ 27a:	90 91 3b 01 	lds	r25, 0x013B	; 0x80013b <timedown+0x1>
+ 27e:	c8 1b       	sub	r28, r24
+ 280:	d9 0b       	sbc	r29, r25
+						
+							if(timeup == 0){								//timeup이 0이면 버튼을 누르지 않았으므로 - 표시
+ 282:	80 91 3c 01 	lds	r24, 0x013C	; 0x80013c <timeup>
+ 286:	90 91 3d 01 	lds	r25, 0x013D	; 0x80013d <timeup+0x1>
+ 28a:	89 2b       	or	r24, r25
+ 28c:	41 f4       	brne	.+16     	; 0x29e <main+0x174>
+								timearr[2] = numb[time]+0x80;
+ 28e:	c8 5f       	subi	r28, 0xF8	; 248
+ 290:	de 4f       	sbci	r29, 0xFE	; 254
+ 292:	88 81       	ld	r24, Y
+ 294:	80 58       	subi	r24, 0x80	; 128
+ 296:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <timearr+0x2>
+								blinknum();
+ 29a:	16 df       	rcall	.-468    	; 0xc8 <blinknum.1754>
+ 29c:	e8 cf       	rjmp	.-48     	; 0x26e <main+0x144>
+							}
+							else{											//timeup이 0이 아니면 버튼을 눌렀으므로 화면에 숫자 표시
+								if ( time > 9) time = 9;					//10분 단위는 9이상 올라갈 수 없으므로 최댓값 9로 설정
+ 29e:	ca 30       	cpi	r28, 0x0A	; 10
+ 2a0:	d1 05       	cpc	r29, r1
+ 2a2:	14 f0       	brlt	.+4      	; 0x2a8 <main+0x17e>
+ 2a4:	c9 e0       	ldi	r28, 0x09	; 9
+ 2a6:	d0 e0       	ldi	r29, 0x00	; 0
+								if ( time <= 0) time = 0;					//시간은 0 이하 내려갈 수 없으므로 최솟값 0로 설정
+ 2a8:	1c 16       	cp	r1, r28
+ 2aa:	1d 06       	cpc	r1, r29
+ 2ac:	14 f0       	brlt	.+4      	; 0x2b2 <main+0x188>
+ 2ae:	c0 e0       	ldi	r28, 0x00	; 0
+ 2b0:	d0 e0       	ldi	r29, 0x00	; 0
+							
+								timearr[2] = numb[time]+0x80;
+ 2b2:	fe 01       	movw	r30, r28
+ 2b4:	e8 5f       	subi	r30, 0xF8	; 248
+ 2b6:	fe 4f       	sbci	r31, 0xFE	; 254
+ 2b8:	80 81       	ld	r24, Z
+ 2ba:	80 58       	subi	r24, 0x80	; 128
+ 2bc:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <timearr+0x2>
+								blinknum();
+ 2c0:	03 df       	rcall	.-506    	; 0xc8 <blinknum.1754>
+								if(complete == 1){							//sw3을 누르면 탈출, 다음 숫자로 넘김
+ 2c2:	80 91 38 01 	lds	r24, 0x0138	; 0x800138 <complete>
+ 2c6:	90 91 39 01 	lds	r25, 0x0139	; 0x800139 <complete+0x1>
+ 2ca:	01 97       	sbiw	r24, 0x01	; 1
+ 2cc:	81 f6       	brne	.-96     	; 0x26e <main+0x144>
+									timearr[2] = numb[time]+0x80;
+ 2ce:	fe 01       	movw	r30, r28
+ 2d0:	e8 5f       	subi	r30, 0xF8	; 248
+ 2d2:	fe 4f       	sbci	r31, 0xFE	; 254
+ 2d4:	80 81       	ld	r24, Z
+ 2d6:	80 58       	subi	r24, 0x80	; 128
+ 2d8:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <timearr+0x2>
+ 2dc:	8f e3       	ldi	r24, 0x3F	; 63
+ 2de:	9c e9       	ldi	r25, 0x9C	; 156
+ 2e0:	01 97       	sbiw	r24, 0x01	; 1
+ 2e2:	f1 f7       	brne	.-4      	; 0x2e0 <main+0x1b6>
+ 2e4:	00 c0       	rjmp	.+0      	; 0x2e6 <main+0x1bc>
+ 2e6:	00 00       	nop
+ 2e8:	9f ef       	ldi	r25, 0xFF	; 255
+ 2ea:	21 ee       	ldi	r18, 0xE1	; 225
+ 2ec:	84 e0       	ldi	r24, 0x04	; 4
+ 2ee:	91 50       	subi	r25, 0x01	; 1
+ 2f0:	20 40       	sbci	r18, 0x00	; 0
+ 2f2:	80 40       	sbci	r24, 0x00	; 0
+ 2f4:	e1 f7       	brne	.-8      	; 0x2ee <main+0x1c4>
+ 2f6:	00 c0       	rjmp	.+0      	; 0x2f8 <main+0x1ce>
+ 2f8:	00 00       	nop
+									break;
+								}
+							}
+						}
+						_delay_ms(100);
+						complete = 0;
+ 2fa:	10 92 39 01 	sts	0x0139, r1	; 0x800139 <complete+0x1>
+ 2fe:	10 92 38 01 	sts	0x0138, r1	; 0x800138 <complete>
+						settimeth = 2;
+ 302:	82 e0       	ldi	r24, 0x02	; 2
+ 304:	90 e0       	ldi	r25, 0x00	; 0
+ 306:	90 93 41 01 	sts	0x0141, r25	; 0x800141 <settimeth+0x1>
+ 30a:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <settimeth>
+								timearr[2] = numb[time]+0x80;
+								blinknum();
+								if(complete == 1){							//sw3을 누르면 탈출, 다음 숫자로 넘김
+									timearr[2] = numb[time]+0x80;
+									_delay_ms(10);
+									min1 = time;
+ 30e:	6e 01       	movw	r12, r28
+							}
+						}
+						_delay_ms(100);
+						complete = 0;
+						settimeth = 2;
+					break;
+ 310:	27 cf       	rjmp	.-434    	; 0x160 <main+0x36>
+					
+					
+					case 2:	//10초 단위 설정
+					complete = 0;
+ 312:	10 92 39 01 	sts	0x0139, r1	; 0x800139 <complete+0x1>
+ 316:	10 92 38 01 	sts	0x0138, r1	; 0x800138 <complete>
+					timeinit[2] = numb[time]+0x80;
+ 31a:	c8 5f       	subi	r28, 0xF8	; 248
+ 31c:	de 4f       	sbci	r29, 0xFE	; 254
+ 31e:	88 81       	ld	r24, Y
+ 320:	e0 e0       	ldi	r30, 0x00	; 0
+ 322:	f1 e0       	ldi	r31, 0x01	; 1
+ 324:	80 58       	subi	r24, 0x80	; 128
+ 326:	82 83       	std	Z+2, r24	; 0x02
+					timeinit[1] = 0;
+ 328:	11 82       	std	Z+1, r1	; 0x01
+					//timeinit[3-settimeth] = 0;							//선택 자릿수 깜빡이도록 배열 설정
+					timeup = 0; timedown = 0;
+ 32a:	10 92 3d 01 	sts	0x013D, r1	; 0x80013d <timeup+0x1>
+ 32e:	10 92 3c 01 	sts	0x013C, r1	; 0x80013c <timeup>
+ 332:	10 92 3b 01 	sts	0x013B, r1	; 0x80013b <timedown+0x1>
+ 336:	10 92 3a 01 	sts	0x013A, r1	; 0x80013a <timedown>
+					while(1){
+						time = timeup - timedown;
+ 33a:	c0 91 3c 01 	lds	r28, 0x013C	; 0x80013c <timeup>
+ 33e:	d0 91 3d 01 	lds	r29, 0x013D	; 0x80013d <timeup+0x1>
+ 342:	80 91 3a 01 	lds	r24, 0x013A	; 0x80013a <timedown>
+ 346:	90 91 3b 01 	lds	r25, 0x013B	; 0x80013b <timedown+0x1>
+ 34a:	c8 1b       	sub	r28, r24
+ 34c:	d9 0b       	sbc	r29, r25
+						if(timeup == 0){									//timeup이 0이면 버튼을 누르지 않았으므로 - 표시
+ 34e:	80 91 3c 01 	lds	r24, 0x013C	; 0x80013c <timeup>
+ 352:	90 91 3d 01 	lds	r25, 0x013D	; 0x80013d <timeup+0x1>
+ 356:	89 2b       	or	r24, r25
+ 358:	39 f4       	brne	.+14     	; 0x368 <main+0x23e>
+							timearr[1] = numb[time];
+ 35a:	c8 5f       	subi	r28, 0xF8	; 248
+ 35c:	de 4f       	sbci	r29, 0xFE	; 254
+ 35e:	88 81       	ld	r24, Y
+ 360:	80 93 05 01 	sts	0x0105, r24	; 0x800105 <timearr+0x1>
+							blinknum();
+ 364:	b1 de       	rcall	.-670    	; 0xc8 <blinknum.1754>
+ 366:	e9 cf       	rjmp	.-46     	; 0x33a <main+0x210>
+						}
+						else{												//timeup이 0이 아니면 버튼을 눌렀으므로 화면에 숫자 표시
+							if ( time > 5) time = 5;						//10초 단위는 6이상 올라갈 수 없으므로 최댓값 5로 설정
+ 368:	c6 30       	cpi	r28, 0x06	; 6
+ 36a:	d1 05       	cpc	r29, r1
+ 36c:	14 f0       	brlt	.+4      	; 0x372 <main+0x248>
+ 36e:	c5 e0       	ldi	r28, 0x05	; 5
+ 370:	d0 e0       	ldi	r29, 0x00	; 0
+							if ( time <= 0) time = 0;						//시간은 0 이하 내려갈 수 없으므로 최솟값 0로 설정
+ 372:	1c 16       	cp	r1, r28
+ 374:	1d 06       	cpc	r1, r29
+ 376:	14 f0       	brlt	.+4      	; 0x37c <main+0x252>
+ 378:	c0 e0       	ldi	r28, 0x00	; 0
+ 37a:	d0 e0       	ldi	r29, 0x00	; 0
+							timearr[1] = numb[time];
+ 37c:	fe 01       	movw	r30, r28
+ 37e:	e8 5f       	subi	r30, 0xF8	; 248
+ 380:	fe 4f       	sbci	r31, 0xFE	; 254
+ 382:	80 81       	ld	r24, Z
+ 384:	80 93 05 01 	sts	0x0105, r24	; 0x800105 <timearr+0x1>
+							blinknum();
+ 388:	9f de       	rcall	.-706    	; 0xc8 <blinknum.1754>
+									
+							if(complete == 1){								//sw3을 누르면 탈출, 다음 숫자로 넘김
+ 38a:	80 91 38 01 	lds	r24, 0x0138	; 0x800138 <complete>
+ 38e:	90 91 39 01 	lds	r25, 0x0139	; 0x800139 <complete+0x1>
+ 392:	01 97       	sbiw	r24, 0x01	; 1
+ 394:	91 f6       	brne	.-92     	; 0x33a <main+0x210>
+								timearr[1] = numb[time];
+ 396:	fe 01       	movw	r30, r28
+ 398:	e8 5f       	subi	r30, 0xF8	; 248
+ 39a:	fe 4f       	sbci	r31, 0xFE	; 254
+ 39c:	80 81       	ld	r24, Z
+ 39e:	80 93 05 01 	sts	0x0105, r24	; 0x800105 <timearr+0x1>
+ 3a2:	8f e3       	ldi	r24, 0x3F	; 63
+ 3a4:	9c e9       	ldi	r25, 0x9C	; 156
+ 3a6:	01 97       	sbiw	r24, 0x01	; 1
+ 3a8:	f1 f7       	brne	.-4      	; 0x3a6 <main+0x27c>
+ 3aa:	00 c0       	rjmp	.+0      	; 0x3ac <main+0x282>
+ 3ac:	00 00       	nop
+ 3ae:	9f ef       	ldi	r25, 0xFF	; 255
+ 3b0:	21 ee       	ldi	r18, 0xE1	; 225
+ 3b2:	84 e0       	ldi	r24, 0x04	; 4
+ 3b4:	91 50       	subi	r25, 0x01	; 1
+ 3b6:	20 40       	sbci	r18, 0x00	; 0
+ 3b8:	80 40       	sbci	r24, 0x00	; 0
+ 3ba:	e1 f7       	brne	.-8      	; 0x3b4 <main+0x28a>
+ 3bc:	00 c0       	rjmp	.+0      	; 0x3be <main+0x294>
+ 3be:	00 00       	nop
+								break;
+							}
+						}
+					}
+					_delay_ms(100);
+					complete = 0;
+ 3c0:	10 92 39 01 	sts	0x0139, r1	; 0x800139 <complete+0x1>
+ 3c4:	10 92 38 01 	sts	0x0138, r1	; 0x800138 <complete>
+					settimeth = 3;
+ 3c8:	83 e0       	ldi	r24, 0x03	; 3
+ 3ca:	90 e0       	ldi	r25, 0x00	; 0
+ 3cc:	90 93 41 01 	sts	0x0141, r25	; 0x800141 <settimeth+0x1>
+ 3d0:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <settimeth>
+							blinknum();
+									
+							if(complete == 1){								//sw3을 누르면 탈출, 다음 숫자로 넘김
+								timearr[1] = numb[time];
+								_delay_ms(10);
+								sec10 = time;
+ 3d4:	8e 01       	movw	r16, r28
+						}
+					}
+					_delay_ms(100);
+					complete = 0;
+					settimeth = 3;
+					break;
+ 3d6:	c4 ce       	rjmp	.-632    	; 0x160 <main+0x36>
+					
+					case 3://1초 단위 설정
+					timeinit[0] = 0;										//선택 자릿수 깜빡이도록 배열 설정
+ 3d8:	e0 e0       	ldi	r30, 0x00	; 0
+ 3da:	f1 e0       	ldi	r31, 0x01	; 1
+ 3dc:	10 82       	st	Z, r1
+					complete = 0;
+ 3de:	10 92 39 01 	sts	0x0139, r1	; 0x800139 <complete+0x1>
+ 3e2:	10 92 38 01 	sts	0x0138, r1	; 0x800138 <complete>
+					timeinit[1] = numb[time];
+ 3e6:	c8 5f       	subi	r28, 0xF8	; 248
+ 3e8:	de 4f       	sbci	r29, 0xFE	; 254
+ 3ea:	88 81       	ld	r24, Y
+ 3ec:	81 83       	std	Z+1, r24	; 0x01
+					timeup = 0; timedown = 0;
+ 3ee:	10 92 3d 01 	sts	0x013D, r1	; 0x80013d <timeup+0x1>
+ 3f2:	10 92 3c 01 	sts	0x013C, r1	; 0x80013c <timeup>
+ 3f6:	10 92 3b 01 	sts	0x013B, r1	; 0x80013b <timedown+0x1>
+ 3fa:	10 92 3a 01 	sts	0x013A, r1	; 0x80013a <timedown>
+					while(1){
+						time = timeup - timedown;
+ 3fe:	c0 91 3c 01 	lds	r28, 0x013C	; 0x80013c <timeup>
+ 402:	d0 91 3d 01 	lds	r29, 0x013D	; 0x80013d <timeup+0x1>
+ 406:	80 91 3a 01 	lds	r24, 0x013A	; 0x80013a <timedown>
+ 40a:	90 91 3b 01 	lds	r25, 0x013B	; 0x80013b <timedown+0x1>
+ 40e:	c8 1b       	sub	r28, r24
+ 410:	d9 0b       	sbc	r29, r25
+						if(timeup == 0){									//timeup이 0이면 버튼을 누르지 않았으므로 - 표시
+ 412:	80 91 3c 01 	lds	r24, 0x013C	; 0x80013c <timeup>
+ 416:	90 91 3d 01 	lds	r25, 0x013D	; 0x80013d <timeup+0x1>
+ 41a:	89 2b       	or	r24, r25
+							timearr[0] = numb[time];
+ 41c:	39 f4       	brne	.+14     	; 0x42c <__LOCK_REGION_LENGTH__+0x2c>
+ 41e:	c8 5f       	subi	r28, 0xF8	; 248
+ 420:	de 4f       	sbci	r29, 0xFE	; 254
+ 422:	88 81       	ld	r24, Y
+ 424:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <timearr>
+							blinknum();
+ 428:	4f de       	rcall	.-866    	; 0xc8 <blinknum.1754>
+ 42a:	e9 cf       	rjmp	.-46     	; 0x3fe <main+0x2d4>
+						}
+						else{												//timeup이 0이 아니면 버튼을 눌렀으므로 화면에 숫자 표시
+							if ( time > 9) time = 9;						//10분 단위는 9이상 올라갈 수 없으므로 최댓값 9로 설정
+ 42c:	ca 30       	cpi	r28, 0x0A	; 10
+ 42e:	d1 05       	cpc	r29, r1
+ 430:	14 f0       	brlt	.+4      	; 0x436 <__LOCK_REGION_LENGTH__+0x36>
+ 432:	c9 e0       	ldi	r28, 0x09	; 9
+ 434:	d0 e0       	ldi	r29, 0x00	; 0
+							if ( time <= 0) time = 0;						//시간은 0 이하 내려갈 수 없으므로 최솟값 0로 설정
+ 436:	1c 16       	cp	r1, r28
+ 438:	1d 06       	cpc	r1, r29
+ 43a:	14 f0       	brlt	.+4      	; 0x440 <__LOCK_REGION_LENGTH__+0x40>
+ 43c:	c0 e0       	ldi	r28, 0x00	; 0
+							
+							timearr[0] = numb[time];
+ 43e:	d0 e0       	ldi	r29, 0x00	; 0
+ 440:	fe 01       	movw	r30, r28
+ 442:	e8 5f       	subi	r30, 0xF8	; 248
+ 444:	fe 4f       	sbci	r31, 0xFE	; 254
+ 446:	80 81       	ld	r24, Z
+ 448:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <timearr>
+							blinknum();
+ 44c:	3d de       	rcall	.-902    	; 0xc8 <blinknum.1754>
+							if(complete == 1){								//sw3을 누르면 탈출, 다음 숫자로 넘김
+ 44e:	80 91 38 01 	lds	r24, 0x0138	; 0x800138 <complete>
+ 452:	90 91 39 01 	lds	r25, 0x0139	; 0x800139 <complete+0x1>
+ 456:	01 97       	sbiw	r24, 0x01	; 1
+ 458:	91 f6       	brne	.-92     	; 0x3fe <main+0x2d4>
+								timearr[0] = numb[time];
+ 45a:	fe 01       	movw	r30, r28
+ 45c:	e8 5f       	subi	r30, 0xF8	; 248
+ 45e:	fe 4f       	sbci	r31, 0xFE	; 254
+ 460:	80 81       	ld	r24, Z
+ 462:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <timearr>
+ 466:	8f e3       	ldi	r24, 0x3F	; 63
+ 468:	9c e9       	ldi	r25, 0x9C	; 156
+ 46a:	01 97       	sbiw	r24, 0x01	; 1
+ 46c:	f1 f7       	brne	.-4      	; 0x46a <__LOCK_REGION_LENGTH__+0x6a>
+ 46e:	00 c0       	rjmp	.+0      	; 0x470 <__LOCK_REGION_LENGTH__+0x70>
+ 470:	00 00       	nop
+ 472:	9f ef       	ldi	r25, 0xFF	; 255
+ 474:	21 ee       	ldi	r18, 0xE1	; 225
+ 476:	84 e0       	ldi	r24, 0x04	; 4
+ 478:	91 50       	subi	r25, 0x01	; 1
+ 47a:	20 40       	sbci	r18, 0x00	; 0
+ 47c:	80 40       	sbci	r24, 0x00	; 0
+ 47e:	e1 f7       	brne	.-8      	; 0x478 <__LOCK_REGION_LENGTH__+0x78>
+ 480:	00 c0       	rjmp	.+0      	; 0x482 <__LOCK_REGION_LENGTH__+0x82>
+ 482:	00 00       	nop
+								break;
+							}
+						}
+					}
+					_delay_ms(100);
+					complete = 0;
+ 484:	10 92 39 01 	sts	0x0139, r1	; 0x800139 <complete+0x1>
+ 488:	10 92 38 01 	sts	0x0138, r1	; 0x800138 <complete>
+					mode = 1;
+ 48c:	81 e0       	ldi	r24, 0x01	; 1
+ 48e:	90 e0       	ldi	r25, 0x00	; 0
+ 490:	90 93 2f 01 	sts	0x012F, r25	; 0x80012f <mode+0x1>
+ 494:	80 93 2e 01 	sts	0x012E, r24	; 0x80012e <mode>
+							timearr[0] = numb[time];
+							blinknum();
+							if(complete == 1){								//sw3을 누르면 탈출, 다음 숫자로 넘김
+								timearr[0] = numb[time];
+								_delay_ms(10);
+								sec1 = time;
+ 498:	5e 01       	movw	r10, r28
+						}
+					}
+					_delay_ms(100);
+					complete = 0;
+					mode = 1;
+					break;
+ 49a:	62 ce       	rjmp	.-828    	; 0x160 <main+0x36>
+				}
+				break;//시간 설정 종료
+					
+			//시간 설정 종료 후 sw1을 누르면 타이머 작동 시작		
+			case 1:
+				opt = 0; reset = 0; timedown = 0;
+ 49c:	10 92 43 01 	sts	0x0143, r1	; 0x800143 <opt+0x1>
+ 4a0:	10 92 42 01 	sts	0x0142, r1	; 0x800142 <opt>
+ 4a4:	10 92 3f 01 	sts	0x013F, r1	; 0x80013f <reset+0x1>
+ 4a8:	10 92 3e 01 	sts	0x013E, r1	; 0x80013e <reset>
+ 4ac:	10 92 3b 01 	sts	0x013B, r1	; 0x80013b <timedown+0x1>
+ 4b0:	10 92 3a 01 	sts	0x013A, r1	; 0x80013a <timedown>
+				endtime = min10 * 600 + min1 * 60 + sec10 * 10 + sec1;	//끝나는 시간이 cnt와 맞을 때 종료하도록 값 설정
+ 4b4:	88 e5       	ldi	r24, 0x58	; 88
+ 4b6:	92 e0       	ldi	r25, 0x02	; 2
+ 4b8:	e8 9e       	mul	r14, r24
+ 4ba:	a0 01       	movw	r20, r0
+ 4bc:	e9 9e       	mul	r14, r25
+ 4be:	50 0d       	add	r21, r0
+ 4c0:	f8 9e       	mul	r15, r24
+ 4c2:	50 0d       	add	r21, r0
+ 4c4:	11 24       	eor	r1, r1
+ 4c6:	2c e3       	ldi	r18, 0x3C	; 60
+ 4c8:	2c 9d       	mul	r18, r12
+ 4ca:	c0 01       	movw	r24, r0
+ 4cc:	2d 9d       	mul	r18, r13
+ 4ce:	90 0d       	add	r25, r0
+ 4d0:	11 24       	eor	r1, r1
+ 4d2:	48 0f       	add	r20, r24
+ 4d4:	59 1f       	adc	r21, r25
+ 4d6:	98 01       	movw	r18, r16
+ 4d8:	22 0f       	add	r18, r18
+ 4da:	33 1f       	adc	r19, r19
+ 4dc:	22 0f       	add	r18, r18
+ 4de:	33 1f       	adc	r19, r19
+ 4e0:	22 0f       	add	r18, r18
+ 4e2:	33 1f       	adc	r19, r19
+ 4e4:	c8 01       	movw	r24, r16
+ 4e6:	88 0f       	add	r24, r24
+ 4e8:	99 1f       	adc	r25, r25
+ 4ea:	82 0f       	add	r24, r18
+ 4ec:	93 1f       	adc	r25, r19
+ 4ee:	84 0f       	add	r24, r20
+ 4f0:	95 1f       	adc	r25, r21
+ 4f2:	8a 0d       	add	r24, r10
+ 4f4:	9b 1d       	adc	r25, r11
+ 4f6:	90 93 2d 01 	sts	0x012D, r25	; 0x80012d <__data_end+0x1>
+ 4fa:	80 93 2c 01 	sts	0x012C, r24	; 0x80012c <__data_end>
+				
+				if (opt == 0) {											//타이머를 시작하는 sw1을 누르기 전에는 설정 시간 표시
+ 4fe:	80 91 42 01 	lds	r24, 0x0142	; 0x800142 <opt>
+ 502:	90 91 43 01 	lds	r25, 0x0143	; 0x800143 <opt+0x1>
+ 506:	89 2b       	or	r24, r25
+ 508:	21 f0       	breq	.+8      	; 0x512 <__LOCK_REGION_LENGTH__+0x112>
+					while(opt == 0){
+					FND_4(timearr);
+ 50a:	52 c0       	rjmp	.+164    	; 0x5b0 <__LOCK_REGION_LENGTH__+0x1b0>
+ 50c:	84 e0       	ldi	r24, 0x04	; 4
+ 50e:	91 e0       	ldi	r25, 0x01	; 1
+ 510:	e1 d1       	rcall	.+962    	; 0x8d4 <FND_4>
+			case 1:
+				opt = 0; reset = 0; timedown = 0;
+				endtime = min10 * 600 + min1 * 60 + sec10 * 10 + sec1;	//끝나는 시간이 cnt와 맞을 때 종료하도록 값 설정
+				
+				if (opt == 0) {											//타이머를 시작하는 sw1을 누르기 전에는 설정 시간 표시
+					while(opt == 0){
+ 512:	80 91 42 01 	lds	r24, 0x0142	; 0x800142 <opt>
+ 516:	90 91 43 01 	lds	r25, 0x0143	; 0x800143 <opt+0x1>
+ 51a:	89 2b       	or	r24, r25
+ 51c:	b9 f3       	breq	.-18     	; 0x50c <__LOCK_REGION_LENGTH__+0x10c>
+ 51e:	48 c0       	rjmp	.+144    	; 0x5b0 <__LOCK_REGION_LENGTH__+0x1b0>
+					FND_4(timearr);
+					}
+				}
+				while(cnt != endtime){									//sw1을 눌러 start 기능 작동
+						if(cnt > 0x10000) cnt = 0;	//
+ 520:	40 90 34 01 	lds	r4, 0x0134	; 0x800134 <cnt>
+ 524:	50 90 35 01 	lds	r5, 0x0135	; 0x800135 <cnt+0x1>
+ 528:	60 90 36 01 	lds	r6, 0x0136	; 0x800136 <cnt+0x2>
+ 52c:	70 90 37 01 	lds	r7, 0x0137	; 0x800137 <cnt+0x3>
+ 530:	21 e0       	ldi	r18, 0x01	; 1
+ 532:	42 16       	cp	r4, r18
+ 534:	51 04       	cpc	r5, r1
+ 536:	62 06       	cpc	r6, r18
+ 538:	71 04       	cpc	r7, r1
+ 53a:	40 f0       	brcs	.+16     	; 0x54c <__LOCK_REGION_LENGTH__+0x14c>
+ 53c:	10 92 34 01 	sts	0x0134, r1	; 0x800134 <cnt>
+ 540:	10 92 35 01 	sts	0x0135, r1	; 0x800135 <cnt+0x1>
+ 544:	10 92 36 01 	sts	0x0136, r1	; 0x800136 <cnt+0x2>
+ 548:	10 92 37 01 	sts	0x0137, r1	; 0x800137 <cnt+0x3>
+						Display(endtime - cnt);
+ 54c:	40 90 34 01 	lds	r4, 0x0134	; 0x800134 <cnt>
+ 550:	50 90 35 01 	lds	r5, 0x0135	; 0x800135 <cnt+0x1>
+ 554:	60 90 36 01 	lds	r6, 0x0136	; 0x800136 <cnt+0x2>
+ 558:	70 90 37 01 	lds	r7, 0x0137	; 0x800137 <cnt+0x3>
+ 55c:	bc 01       	movw	r22, r24
+ 55e:	cd 01       	movw	r24, r26
+ 560:	64 19       	sub	r22, r4
+ 562:	75 09       	sbc	r23, r5
+ 564:	86 09       	sbc	r24, r6
+ 566:	97 09       	sbc	r25, r7
+ 568:	cc d1       	rcall	.+920    	; 0x902 <Display>
+						if (timedown != 0){								//reset버튼을 누르면 모두 초기화 후 초기 화면으로 복귀
+ 56a:	80 91 3a 01 	lds	r24, 0x013A	; 0x80013a <timedown>
+ 56e:	90 91 3b 01 	lds	r25, 0x013B	; 0x80013b <timedown+0x1>
+ 572:	89 2b       	or	r24, r25
+ 574:	e9 f0       	breq	.+58     	; 0x5b0 <__LOCK_REGION_LENGTH__+0x1b0>
+					opt=0, settimeth=0, reset=0, timeup = 0,timedown = 0, complete = 0, endtime = 0; break;
+ 576:	10 92 43 01 	sts	0x0143, r1	; 0x800143 <opt+0x1>
+ 57a:	10 92 42 01 	sts	0x0142, r1	; 0x800142 <opt>
+ 57e:	10 92 41 01 	sts	0x0141, r1	; 0x800141 <settimeth+0x1>
+ 582:	10 92 40 01 	sts	0x0140, r1	; 0x800140 <settimeth>
+ 586:	10 92 3f 01 	sts	0x013F, r1	; 0x80013f <reset+0x1>
+ 58a:	10 92 3e 01 	sts	0x013E, r1	; 0x80013e <reset>
+ 58e:	10 92 3d 01 	sts	0x013D, r1	; 0x80013d <timeup+0x1>
+ 592:	10 92 3c 01 	sts	0x013C, r1	; 0x80013c <timeup>
+ 596:	10 92 3b 01 	sts	0x013B, r1	; 0x80013b <timedown+0x1>
+ 59a:	10 92 3a 01 	sts	0x013A, r1	; 0x80013a <timedown>
+ 59e:	10 92 39 01 	sts	0x0139, r1	; 0x800139 <complete+0x1>
+ 5a2:	10 92 38 01 	sts	0x0138, r1	; 0x800138 <complete>
+ 5a6:	10 92 2d 01 	sts	0x012D, r1	; 0x80012d <__data_end+0x1>
+ 5aa:	10 92 2c 01 	sts	0x012C, r1	; 0x80012c <__data_end>
+ 5ae:	16 c0       	rjmp	.+44     	; 0x5dc <__LOCK_REGION_LENGTH__+0x1dc>
+				if (opt == 0) {											//타이머를 시작하는 sw1을 누르기 전에는 설정 시간 표시
+					while(opt == 0){
+					FND_4(timearr);
+					}
+				}
+				while(cnt != endtime){									//sw1을 눌러 start 기능 작동
+ 5b0:	60 91 2c 01 	lds	r22, 0x012C	; 0x80012c <__data_end>
+ 5b4:	70 91 2d 01 	lds	r23, 0x012D	; 0x80012d <__data_end+0x1>
+ 5b8:	cb 01       	movw	r24, r22
+ 5ba:	77 0f       	add	r23, r23
+ 5bc:	aa 0b       	sbc	r26, r26
+ 5be:	bb 0b       	sbc	r27, r27
+ 5c0:	40 90 34 01 	lds	r4, 0x0134	; 0x800134 <cnt>
+ 5c4:	50 90 35 01 	lds	r5, 0x0135	; 0x800135 <cnt+0x1>
+ 5c8:	60 90 36 01 	lds	r6, 0x0136	; 0x800136 <cnt+0x2>
+ 5cc:	70 90 37 01 	lds	r7, 0x0137	; 0x800137 <cnt+0x3>
+ 5d0:	84 15       	cp	r24, r4
+ 5d2:	95 05       	cpc	r25, r5
+ 5d4:	a6 05       	cpc	r26, r6
+ 5d6:	b7 05       	cpc	r27, r7
+ 5d8:	09 f0       	breq	.+2      	; 0x5dc <__LOCK_REGION_LENGTH__+0x1dc>
+ 5da:	a2 cf       	rjmp	.-188    	; 0x520 <__LOCK_REGION_LENGTH__+0x120>
+					opt=0, settimeth=0, reset=0, timeup = 0,timedown = 0, complete = 0, endtime = 0; break;
+						}
+				}
+				
+				
+				if(cnt == endtime){										//시간이 맞으면 LED 점멸, RESET을 누르면
+ 5dc:	80 91 2c 01 	lds	r24, 0x012C	; 0x80012c <__data_end>
+ 5e0:	90 91 2d 01 	lds	r25, 0x012D	; 0x80012d <__data_end+0x1>
+ 5e4:	09 2e       	mov	r0, r25
+ 5e6:	00 0c       	add	r0, r0
+ 5e8:	aa 0b       	sbc	r26, r26
+ 5ea:	bb 0b       	sbc	r27, r27
+ 5ec:	40 91 34 01 	lds	r20, 0x0134	; 0x800134 <cnt>
+ 5f0:	50 91 35 01 	lds	r21, 0x0135	; 0x800135 <cnt+0x1>
+ 5f4:	60 91 36 01 	lds	r22, 0x0136	; 0x800136 <cnt+0x2>
+ 5f8:	70 91 37 01 	lds	r23, 0x0137	; 0x800137 <cnt+0x3>
+ 5fc:	84 17       	cp	r24, r20
+ 5fe:	95 07       	cpc	r25, r21
+ 600:	a6 07       	cpc	r26, r22
+ 602:	b7 07       	cpc	r27, r23
+ 604:	09 f0       	breq	.+2      	; 0x608 <__LOCK_REGION_LENGTH__+0x208>
+ 606:	3f c0       	rjmp	.+126    	; 0x686 <__LOCK_REGION_LENGTH__+0x286>
+					reset = 0;
+ 608:	10 92 3f 01 	sts	0x013F, r1	; 0x80013f <reset+0x1>
+ 60c:	10 92 3e 01 	sts	0x013E, r1	; 0x80013e <reset>
+					while(reset == 0){									//reset이 눌리면 끝나도록
+ 610:	18 c0       	rjmp	.+48     	; 0x642 <__LOCK_REGION_LENGTH__+0x242>
+						PORTA |= 0x80;									//Port A의 7번째 비트를 1(HIGH)로 설정
+ 612:	8b b3       	in	r24, 0x1b	; 27
+ 614:	80 68       	ori	r24, 0x80	; 128
+ 616:	8b bb       	out	0x1b, r24	; 27
+ 618:	8f ef       	ldi	r24, 0xFF	; 255
+ 61a:	99 e6       	ldi	r25, 0x69	; 105
+ 61c:	28 e1       	ldi	r18, 0x18	; 24
+ 61e:	81 50       	subi	r24, 0x01	; 1
+ 620:	90 40       	sbci	r25, 0x00	; 0
+ 622:	20 40       	sbci	r18, 0x00	; 0
+ 624:	e1 f7       	brne	.-8      	; 0x61e <__LOCK_REGION_LENGTH__+0x21e>
+ 626:	00 c0       	rjmp	.+0      	; 0x628 <__LOCK_REGION_LENGTH__+0x228>
+ 628:	00 00       	nop
+						_delay_ms(500);
+						PORTA &= ~0x80;									//Port A의 7번째 비트를 0(LOW)로 설정
+ 62a:	8b b3       	in	r24, 0x1b	; 27
+ 62c:	8f 77       	andi	r24, 0x7F	; 127
+ 62e:	8b bb       	out	0x1b, r24	; 27
+ 630:	8f ef       	ldi	r24, 0xFF	; 255
+ 632:	99 e6       	ldi	r25, 0x69	; 105
+ 634:	28 e1       	ldi	r18, 0x18	; 24
+ 636:	81 50       	subi	r24, 0x01	; 1
+ 638:	90 40       	sbci	r25, 0x00	; 0
+ 63a:	20 40       	sbci	r18, 0x00	; 0
+ 63c:	e1 f7       	brne	.-8      	; 0x636 <__LOCK_REGION_LENGTH__+0x236>
+ 63e:	00 c0       	rjmp	.+0      	; 0x640 <__LOCK_REGION_LENGTH__+0x240>
+ 640:	00 00       	nop
+				}
+				
+				
+				if(cnt == endtime){										//시간이 맞으면 LED 점멸, RESET을 누르면
+					reset = 0;
+					while(reset == 0){									//reset이 눌리면 끝나도록
+ 642:	80 91 3e 01 	lds	r24, 0x013E	; 0x80013e <reset>
+ 646:	90 91 3f 01 	lds	r25, 0x013F	; 0x80013f <reset+0x1>
+ 64a:	89 2b       	or	r24, r25
+ 64c:	11 f3       	breq	.-60     	; 0x612 <__LOCK_REGION_LENGTH__+0x212>
+						PORTA |= 0x80;									//Port A의 7번째 비트를 1(HIGH)로 설정
+						_delay_ms(500);
+						PORTA &= ~0x80;									//Port A의 7번째 비트를 0(LOW)로 설정
+						_delay_ms(500);
+					}
+					opt=0, settimeth=0, reset=0, timeup = 0,timedown = 0, complete = 0, endtime = 0;
+ 64e:	10 92 43 01 	sts	0x0143, r1	; 0x800143 <opt+0x1>
+ 652:	10 92 42 01 	sts	0x0142, r1	; 0x800142 <opt>
+ 656:	10 92 41 01 	sts	0x0141, r1	; 0x800141 <settimeth+0x1>
+ 65a:	10 92 40 01 	sts	0x0140, r1	; 0x800140 <settimeth>
+ 65e:	10 92 3f 01 	sts	0x013F, r1	; 0x80013f <reset+0x1>
+ 662:	10 92 3e 01 	sts	0x013E, r1	; 0x80013e <reset>
+ 666:	10 92 3d 01 	sts	0x013D, r1	; 0x80013d <timeup+0x1>
+ 66a:	10 92 3c 01 	sts	0x013C, r1	; 0x80013c <timeup>
+ 66e:	10 92 3b 01 	sts	0x013B, r1	; 0x80013b <timedown+0x1>
+ 672:	10 92 3a 01 	sts	0x013A, r1	; 0x80013a <timedown>
+ 676:	10 92 39 01 	sts	0x0139, r1	; 0x800139 <complete+0x1>
+ 67a:	10 92 38 01 	sts	0x0138, r1	; 0x800138 <complete>
+ 67e:	10 92 2d 01 	sts	0x012D, r1	; 0x80012d <__data_end+0x1>
+ 682:	10 92 2c 01 	sts	0x012C, r1	; 0x80012c <__data_end>
+							timearr[0] = numb[time];
+							blinknum();
+						}
+						else{												//timeup이 0이 아니면 버튼을 눌렀으므로 화면에 숫자 표시
+							if ( time > 9) time = 9;						//10분 단위는 9이상 올라갈 수 없으므로 최댓값 9로 설정
+							if ( time <= 0) time = 0;						//시간은 0 이하 내려갈 수 없으므로 최솟값 0로 설정
+ 686:	80 e0       	ldi	r24, 0x00	; 0
+ 688:	90 e0       	ldi	r25, 0x00	; 0
+ 68a:	0a c0       	rjmp	.+20     	; 0x6a0 <__LOCK_REGION_LENGTH__+0x2a0>
+					}
+					opt=0, settimeth=0, reset=0, timeup = 0,timedown = 0, complete = 0, endtime = 0;
+				}
+				//종료되면 모든 값 초기화 후 복귀
+				for(int init = 0; init < 4; init ++){
+					timearr[init]=0x40;
+ 68c:	fc 01       	movw	r30, r24
+ 68e:	ec 5f       	subi	r30, 0xFC	; 252
+ 690:	fe 4f       	sbci	r31, 0xFE	; 254
+ 692:	20 e4       	ldi	r18, 0x40	; 64
+ 694:	20 83       	st	Z, r18
+					timeinit[init]=0x40;
+ 696:	fc 01       	movw	r30, r24
+ 698:	e0 50       	subi	r30, 0x00	; 0
+ 69a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 69c:	20 83       	st	Z, r18
+						_delay_ms(500);
+					}
+					opt=0, settimeth=0, reset=0, timeup = 0,timedown = 0, complete = 0, endtime = 0;
+				}
+				//종료되면 모든 값 초기화 후 복귀
+				for(int init = 0; init < 4; init ++){
+ 69e:	01 96       	adiw	r24, 0x01	; 1
+ 6a0:	84 30       	cpi	r24, 0x04	; 4
+ 6a2:	91 05       	cpc	r25, r1
+ 6a4:	9c f3       	brlt	.-26     	; 0x68c <__LOCK_REGION_LENGTH__+0x28c>
+					timearr[init]=0x40;
+					timeinit[init]=0x40;
+				}
+				timearr[2]=0xC0;
+ 6a6:	80 ec       	ldi	r24, 0xC0	; 192
+ 6a8:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <timearr+0x2>
+				timeinit[2]=0xC0;
+ 6ac:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <__DATA_REGION_ORIGIN__+0x2>
+				mode = 0;
+ 6b0:	10 92 2f 01 	sts	0x012F, r1	; 0x80012f <mode+0x1>
+ 6b4:	10 92 2e 01 	sts	0x012E, r1	; 0x80012e <mode>
+				break;//타이머 작동 종료
+ 6b8:	53 cd       	rjmp	.-1370   	; 0x160 <main+0x36>
+
+000006ba <__vector_5>:
+			}//switch mode
+		}	//main의 while
+	}	//main끝
+
+
+ISR(INT4_vect){	//INT4 인터럽트 처리 루틴: sw1 (start, pause, continue 버튼, 기능은 opt이 결정)
+ 6ba:	1f 92       	push	r1
+ 6bc:	0f 92       	push	r0
+ 6be:	0f b6       	in	r0, 0x3f	; 63
+ 6c0:	0f 92       	push	r0
+ 6c2:	11 24       	eor	r1, r1
+ 6c4:	8f 93       	push	r24
+ 6c6:	9f 93       	push	r25
+	timeup++;
+ 6c8:	80 91 3c 01 	lds	r24, 0x013C	; 0x80013c <timeup>
+ 6cc:	90 91 3d 01 	lds	r25, 0x013D	; 0x80013d <timeup+0x1>
+ 6d0:	01 96       	adiw	r24, 0x01	; 1
+ 6d2:	90 93 3d 01 	sts	0x013D, r25	; 0x80013d <timeup+0x1>
+ 6d6:	80 93 3c 01 	sts	0x013C, r24	; 0x80013c <timeup>
+	opt++;
+ 6da:	80 91 42 01 	lds	r24, 0x0142	; 0x800142 <opt>
+ 6de:	90 91 43 01 	lds	r25, 0x0143	; 0x800143 <opt+0x1>
+ 6e2:	01 96       	adiw	r24, 0x01	; 1
+ 6e4:	90 93 43 01 	sts	0x0143, r25	; 0x800143 <opt+0x1>
+ 6e8:	80 93 42 01 	sts	0x0142, r24	; 0x800142 <opt>
+	if (opt >= 2) opt = 0;
+ 6ec:	80 91 42 01 	lds	r24, 0x0142	; 0x800142 <opt>
+ 6f0:	90 91 43 01 	lds	r25, 0x0143	; 0x800143 <opt+0x1>
+ 6f4:	02 97       	sbiw	r24, 0x02	; 2
+ 6f6:	24 f0       	brlt	.+8      	; 0x700 <__vector_5+0x46>
+ 6f8:	10 92 43 01 	sts	0x0143, r1	; 0x800143 <opt+0x1>
+ 6fc:	10 92 42 01 	sts	0x0142, r1	; 0x800142 <opt>
+}
+ 700:	9f 91       	pop	r25
+ 702:	8f 91       	pop	r24
+ 704:	0f 90       	pop	r0
+ 706:	0f be       	out	0x3f, r0	; 63
+ 708:	0f 90       	pop	r0
+ 70a:	1f 90       	pop	r1
+ 70c:	18 95       	reti
+
+0000070e <__vector_6>:
+
+ISR(INT5_vect){	//INT5 인터럽트 처리 루틴: sw2 (시간 설정 버튼)
+ 70e:	1f 92       	push	r1
+ 710:	0f 92       	push	r0
+ 712:	0f b6       	in	r0, 0x3f	; 63
+ 714:	0f 92       	push	r0
+ 716:	11 24       	eor	r1, r1
+ 718:	8f 93       	push	r24
+ 71a:	9f 93       	push	r25
+	timedown++;
+ 71c:	80 91 3a 01 	lds	r24, 0x013A	; 0x80013a <timedown>
+ 720:	90 91 3b 01 	lds	r25, 0x013B	; 0x80013b <timedown+0x1>
+ 724:	01 96       	adiw	r24, 0x01	; 1
+ 726:	90 93 3b 01 	sts	0x013B, r25	; 0x80013b <timedown+0x1>
+ 72a:	80 93 3a 01 	sts	0x013A, r24	; 0x80013a <timedown>
+}
+ 72e:	9f 91       	pop	r25
+ 730:	8f 91       	pop	r24
+ 732:	0f 90       	pop	r0
+ 734:	0f be       	out	0x3f, r0	; 63
+ 736:	0f 90       	pop	r0
+ 738:	1f 90       	pop	r1
+ 73a:	18 95       	reti
+
+0000073c <__vector_7>:
+
+ISR(INT6_vect){	//INT6 인터럽트 처리 루틴: sw3 (reset 버튼)
+ 73c:	1f 92       	push	r1
+ 73e:	0f 92       	push	r0
+ 740:	0f b6       	in	r0, 0x3f	; 63
+ 742:	0f 92       	push	r0
+ 744:	11 24       	eor	r1, r1
+ 746:	2f 93       	push	r18
+ 748:	3f 93       	push	r19
+ 74a:	8f 93       	push	r24
+ 74c:	9f 93       	push	r25
+	
+	cnt = 0; opt = 0; complete = 1; settimeth++; reset = 1;
+ 74e:	10 92 34 01 	sts	0x0134, r1	; 0x800134 <cnt>
+ 752:	10 92 35 01 	sts	0x0135, r1	; 0x800135 <cnt+0x1>
+ 756:	10 92 36 01 	sts	0x0136, r1	; 0x800136 <cnt+0x2>
+ 75a:	10 92 37 01 	sts	0x0137, r1	; 0x800137 <cnt+0x3>
+ 75e:	10 92 43 01 	sts	0x0143, r1	; 0x800143 <opt+0x1>
+ 762:	10 92 42 01 	sts	0x0142, r1	; 0x800142 <opt>
+ 766:	21 e0       	ldi	r18, 0x01	; 1
+ 768:	30 e0       	ldi	r19, 0x00	; 0
+ 76a:	30 93 39 01 	sts	0x0139, r19	; 0x800139 <complete+0x1>
+ 76e:	20 93 38 01 	sts	0x0138, r18	; 0x800138 <complete>
+ 772:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <settimeth>
+ 776:	90 91 41 01 	lds	r25, 0x0141	; 0x800141 <settimeth+0x1>
+ 77a:	01 96       	adiw	r24, 0x01	; 1
+ 77c:	90 93 41 01 	sts	0x0141, r25	; 0x800141 <settimeth+0x1>
+ 780:	80 93 40 01 	sts	0x0140, r24	; 0x800140 <settimeth>
+ 784:	30 93 3f 01 	sts	0x013F, r19	; 0x80013f <reset+0x1>
+ 788:	20 93 3e 01 	sts	0x013E, r18	; 0x80013e <reset>
+	if (settimeth > 3) mode = 1; opt = 0;
+ 78c:	80 91 40 01 	lds	r24, 0x0140	; 0x800140 <settimeth>
+ 790:	90 91 41 01 	lds	r25, 0x0141	; 0x800141 <settimeth+0x1>
+ 794:	04 97       	sbiw	r24, 0x04	; 4
+ 796:	34 f0       	brlt	.+12     	; 0x7a4 <__vector_7+0x68>
+ 798:	81 e0       	ldi	r24, 0x01	; 1
+ 79a:	90 e0       	ldi	r25, 0x00	; 0
+ 79c:	90 93 2f 01 	sts	0x012F, r25	; 0x80012f <mode+0x1>
+ 7a0:	80 93 2e 01 	sts	0x012E, r24	; 0x80012e <mode>
+ 7a4:	10 92 43 01 	sts	0x0143, r1	; 0x800143 <opt+0x1>
+ 7a8:	10 92 42 01 	sts	0x0142, r1	; 0x800142 <opt>
+}
+ 7ac:	9f 91       	pop	r25
+ 7ae:	8f 91       	pop	r24
+ 7b0:	3f 91       	pop	r19
+ 7b2:	2f 91       	pop	r18
+ 7b4:	0f 90       	pop	r0
+ 7b6:	0f be       	out	0x3f, r0	; 63
+ 7b8:	0f 90       	pop	r0
+ 7ba:	1f 90       	pop	r1
+ 7bc:	18 95       	reti
+
+000007be <__vector_14>:
+
+ISR(TIMER1_OVF_vect){
+ 7be:	1f 92       	push	r1
+ 7c0:	0f 92       	push	r0
+ 7c2:	0f b6       	in	r0, 0x3f	; 63
+ 7c4:	0f 92       	push	r0
+ 7c6:	11 24       	eor	r1, r1
+ 7c8:	2f 93       	push	r18
+ 7ca:	3f 93       	push	r19
+ 7cc:	4f 93       	push	r20
+ 7ce:	5f 93       	push	r21
+ 7d0:	8f 93       	push	r24
+ 7d2:	9f 93       	push	r25
+ 7d4:	af 93       	push	r26
+ 7d6:	bf 93       	push	r27
+		tcnt++;
+ 7d8:	80 91 30 01 	lds	r24, 0x0130	; 0x800130 <tcnt>
+ 7dc:	90 91 31 01 	lds	r25, 0x0131	; 0x800131 <tcnt+0x1>
+ 7e0:	a0 91 32 01 	lds	r26, 0x0132	; 0x800132 <tcnt+0x2>
+ 7e4:	b0 91 33 01 	lds	r27, 0x0133	; 0x800133 <tcnt+0x3>
+ 7e8:	01 96       	adiw	r24, 0x01	; 1
+ 7ea:	a1 1d       	adc	r26, r1
+ 7ec:	b1 1d       	adc	r27, r1
+ 7ee:	80 93 30 01 	sts	0x0130, r24	; 0x800130 <tcnt>
+ 7f2:	90 93 31 01 	sts	0x0131, r25	; 0x800131 <tcnt+0x1>
+ 7f6:	a0 93 32 01 	sts	0x0132, r26	; 0x800132 <tcnt+0x2>
+ 7fa:	b0 93 33 01 	sts	0x0133, r27	; 0x800133 <tcnt+0x3>
+		if(mode == 1 & opt ==1){// sw1을 누르면 opt값이 변하므로 일시정지 구현 가능
+ 7fe:	20 91 42 01 	lds	r18, 0x0142	; 0x800142 <opt>
+ 802:	30 91 43 01 	lds	r19, 0x0143	; 0x800143 <opt+0x1>
+ 806:	91 e0       	ldi	r25, 0x01	; 1
+ 808:	40 91 2e 01 	lds	r20, 0x012E	; 0x80012e <mode>
+ 80c:	50 91 2f 01 	lds	r21, 0x012F	; 0x80012f <mode+0x1>
+ 810:	41 30       	cpi	r20, 0x01	; 1
+ 812:	51 05       	cpc	r21, r1
+ 814:	09 f0       	breq	.+2      	; 0x818 <__vector_14+0x5a>
+ 816:	90 e0       	ldi	r25, 0x00	; 0
+ 818:	81 e0       	ldi	r24, 0x01	; 1
+ 81a:	21 30       	cpi	r18, 0x01	; 1
+ 81c:	31 05       	cpc	r19, r1
+ 81e:	09 f0       	breq	.+2      	; 0x822 <__vector_14+0x64>
+ 820:	80 e0       	ldi	r24, 0x00	; 0
+ 822:	89 23       	and	r24, r25
+ 824:	d9 f0       	breq	.+54     	; 0x85c <__vector_14+0x9e>
+		//if (tcnt >= 1000){
+			cnt++; tcnt = 0;//1초(1000밀리초)가 지나면 cnt값을 증가시켜라
+ 826:	80 91 34 01 	lds	r24, 0x0134	; 0x800134 <cnt>
+ 82a:	90 91 35 01 	lds	r25, 0x0135	; 0x800135 <cnt+0x1>
+ 82e:	a0 91 36 01 	lds	r26, 0x0136	; 0x800136 <cnt+0x2>
+ 832:	b0 91 37 01 	lds	r27, 0x0137	; 0x800137 <cnt+0x3>
+ 836:	01 96       	adiw	r24, 0x01	; 1
+ 838:	a1 1d       	adc	r26, r1
+ 83a:	b1 1d       	adc	r27, r1
+ 83c:	80 93 34 01 	sts	0x0134, r24	; 0x800134 <cnt>
+ 840:	90 93 35 01 	sts	0x0135, r25	; 0x800135 <cnt+0x1>
+ 844:	a0 93 36 01 	sts	0x0136, r26	; 0x800136 <cnt+0x2>
+ 848:	b0 93 37 01 	sts	0x0137, r27	; 0x800137 <cnt+0x3>
+ 84c:	10 92 30 01 	sts	0x0130, r1	; 0x800130 <tcnt>
+ 850:	10 92 31 01 	sts	0x0131, r1	; 0x800131 <tcnt+0x1>
+ 854:	10 92 32 01 	sts	0x0132, r1	; 0x800132 <tcnt+0x2>
+ 858:	10 92 33 01 	sts	0x0133, r1	; 0x800133 <tcnt+0x3>
+		//}
+		}
+}
+ 85c:	bf 91       	pop	r27
+ 85e:	af 91       	pop	r26
+ 860:	9f 91       	pop	r25
+ 862:	8f 91       	pop	r24
+ 864:	5f 91       	pop	r21
+ 866:	4f 91       	pop	r20
+ 868:	3f 91       	pop	r19
+ 86a:	2f 91       	pop	r18
+ 86c:	0f 90       	pop	r0
+ 86e:	0f be       	out	0x3f, r0	; 63
+ 870:	0f 90       	pop	r0
+ 872:	1f 90       	pop	r1
+ 874:	18 95       	reti
+
+00000876 <SegPortSet>:
+	
+char arr[5];		//세그먼트 이미지 정보를 담을 안전공간
+char *PD = &PORTD, *PC = &PORTC;	//포트 변수화
+
+void SegPortSet(char *p1, char *p2){
+	PD = p1; PC = p2;
+ 876:	90 93 1b 01 	sts	0x011B, r25	; 0x80011b <PD+0x1>
+ 87a:	80 93 1a 01 	sts	0x011A, r24	; 0x80011a <PD>
+ 87e:	70 93 19 01 	sts	0x0119, r23	; 0x800119 <PC+0x1>
+ 882:	60 93 18 01 	sts	0x0118, r22	; 0x800118 <PC>
+ 886:	08 95       	ret
+
+00000888 <seg>:
+}
+void seg(int sel, uint8_t c){
+	*PC |= 0X0F;
+ 888:	e0 91 18 01 	lds	r30, 0x0118	; 0x800118 <PC>
+ 88c:	f0 91 19 01 	lds	r31, 0x0119	; 0x800119 <PC+0x1>
+ 890:	20 81       	ld	r18, Z
+ 892:	2f 60       	ori	r18, 0x0F	; 15
+ 894:	20 83       	st	Z, r18
+	*PC &= ~(1 << (3-sel));
+ 896:	e0 91 18 01 	lds	r30, 0x0118	; 0x800118 <PC>
+ 89a:	f0 91 19 01 	lds	r31, 0x0119	; 0x800119 <PC+0x1>
+ 89e:	23 e0       	ldi	r18, 0x03	; 3
+ 8a0:	30 e0       	ldi	r19, 0x00	; 0
+ 8a2:	28 1b       	sub	r18, r24
+ 8a4:	39 0b       	sbc	r19, r25
+ 8a6:	81 e0       	ldi	r24, 0x01	; 1
+ 8a8:	90 e0       	ldi	r25, 0x00	; 0
+ 8aa:	02 c0       	rjmp	.+4      	; 0x8b0 <seg+0x28>
+ 8ac:	88 0f       	add	r24, r24
+ 8ae:	99 1f       	adc	r25, r25
+ 8b0:	2a 95       	dec	r18
+ 8b2:	e2 f7       	brpl	.-8      	; 0x8ac <seg+0x24>
+ 8b4:	80 95       	com	r24
+ 8b6:	90 81       	ld	r25, Z
+ 8b8:	89 23       	and	r24, r25
+ 8ba:	80 83       	st	Z, r24
+	*PD = c;	//숫자 데이터 출력
+ 8bc:	e0 91 1a 01 	lds	r30, 0x011A	; 0x80011a <PD>
+ 8c0:	f0 91 1b 01 	lds	r31, 0x011B	; 0x80011b <PD+0x1>
+ 8c4:	60 83       	st	Z, r22
+ 8c6:	8f e3       	ldi	r24, 0x3F	; 63
+ 8c8:	9f e1       	ldi	r25, 0x1F	; 31
+ 8ca:	01 97       	sbiw	r24, 0x01	; 1
+ 8cc:	f1 f7       	brne	.-4      	; 0x8ca <seg+0x42>
+ 8ce:	00 c0       	rjmp	.+0      	; 0x8d0 <seg+0x48>
+ 8d0:	00 00       	nop
+ 8d2:	08 95       	ret
+
+000008d4 <FND_4>:
+	_delay_ms(2);
+}
+
+
+void FND_4(char *inf){	//segment Image 배열
+ 8d4:	0f 93       	push	r16
+ 8d6:	1f 93       	push	r17
+ 8d8:	cf 93       	push	r28
+ 8da:	df 93       	push	r29
+ 8dc:	8c 01       	movw	r16, r24
+	for (int i = 0; i < 4; i++){
+ 8de:	c0 e0       	ldi	r28, 0x00	; 0
+ 8e0:	d0 e0       	ldi	r29, 0x00	; 0
+ 8e2:	07 c0       	rjmp	.+14     	; 0x8f2 <FND_4+0x1e>
+		seg(i, *(inf+i));
+ 8e4:	f8 01       	movw	r30, r16
+ 8e6:	ec 0f       	add	r30, r28
+ 8e8:	fd 1f       	adc	r31, r29
+ 8ea:	60 81       	ld	r22, Z
+ 8ec:	ce 01       	movw	r24, r28
+ 8ee:	cc df       	rcall	.-104    	; 0x888 <seg>
+	_delay_ms(2);
+}
+
+
+void FND_4(char *inf){	//segment Image 배열
+	for (int i = 0; i < 4; i++){
+ 8f0:	21 96       	adiw	r28, 0x01	; 1
+ 8f2:	c4 30       	cpi	r28, 0x04	; 4
+ 8f4:	d1 05       	cpc	r29, r1
+ 8f6:	b4 f3       	brlt	.-20     	; 0x8e4 <FND_4+0x10>
+		seg(i, *(inf+i));
+
+	}
+}
+ 8f8:	df 91       	pop	r29
+ 8fa:	cf 91       	pop	r28
+ 8fc:	1f 91       	pop	r17
+ 8fe:	0f 91       	pop	r16
+ 900:	08 95       	ret
+
+00000902 <Display>:
+
+//16진수 segment image 배열
+char* Display(unsigned long num){	//10진 정수를 입력받아 16진수 문자열로 변환 ex)65535 ==> 0xffff, 56506=>0xBCDA
+ 902:	4f 92       	push	r4
+ 904:	5f 92       	push	r5
+ 906:	6f 92       	push	r6
+ 908:	7f 92       	push	r7
+ 90a:	8f 92       	push	r8
+ 90c:	9f 92       	push	r9
+ 90e:	af 92       	push	r10
+ 910:	bf 92       	push	r11
+ 912:	cf 92       	push	r12
+ 914:	df 92       	push	r13
+ 916:	ef 92       	push	r14
+ 918:	ff 92       	push	r15
+ 91a:	cf 93       	push	r28
+ 91c:	df 93       	push	r29
+ 91e:	cd b7       	in	r28, 0x3d	; 61
+ 920:	de b7       	in	r29, 0x3e	; 62
+ 922:	28 97       	sbiw	r28, 0x08	; 8
+ 924:	0f b6       	in	r0, 0x3f	; 63
+ 926:	f8 94       	cli
+ 928:	de bf       	out	0x3e, r29	; 62
+ 92a:	0f be       	out	0x3f, r0	; 63
+ 92c:	cd bf       	out	0x3d, r28	; 61
+ 92e:	6b 01       	movw	r12, r22
+ 930:	7c 01       	movw	r14, r24
+	int n1 = num % 10;			//A(10): 문자가 아닌 숫자
+ 932:	0f 2e       	mov	r0, r31
+ 934:	fa e0       	ldi	r31, 0x0A	; 10
+ 936:	8f 2e       	mov	r8, r31
+ 938:	91 2c       	mov	r9, r1
+ 93a:	a1 2c       	mov	r10, r1
+ 93c:	b1 2c       	mov	r11, r1
+ 93e:	f0 2d       	mov	r31, r0
+ 940:	a5 01       	movw	r20, r10
+ 942:	94 01       	movw	r18, r8
+ 944:	81 d0       	rcall	.+258    	; 0xa48 <__udivmodsi4>
+ 946:	69 83       	std	Y+1, r22	; 0x01
+ 948:	7a 83       	std	Y+2, r23	; 0x02
+ 94a:	8b 83       	std	Y+3, r24	; 0x03
+ 94c:	9c 83       	std	Y+4, r25	; 0x04
+	int n2 = (num / 10) % 6;	//B(11)
+ 94e:	0f 2e       	mov	r0, r31
+ 950:	f6 e0       	ldi	r31, 0x06	; 6
+ 952:	4f 2e       	mov	r4, r31
+ 954:	51 2c       	mov	r5, r1
+ 956:	61 2c       	mov	r6, r1
+ 958:	71 2c       	mov	r7, r1
+ 95a:	f0 2d       	mov	r31, r0
+ 95c:	ca 01       	movw	r24, r20
+ 95e:	b9 01       	movw	r22, r18
+ 960:	a3 01       	movw	r20, r6
+ 962:	92 01       	movw	r18, r4
+ 964:	71 d0       	rcall	.+226    	; 0xa48 <__udivmodsi4>
+ 966:	6d 83       	std	Y+5, r22	; 0x05
+ 968:	7e 83       	std	Y+6, r23	; 0x06
+ 96a:	8f 83       	std	Y+7, r24	; 0x07
+ 96c:	98 87       	std	Y+8, r25	; 0x08
+	int n3 = (num / 60) % 10;	//C(12)
+ 96e:	c7 01       	movw	r24, r14
+ 970:	b6 01       	movw	r22, r12
+ 972:	2c e3       	ldi	r18, 0x3C	; 60
+ 974:	30 e0       	ldi	r19, 0x00	; 0
+ 976:	40 e0       	ldi	r20, 0x00	; 0
+ 978:	50 e0       	ldi	r21, 0x00	; 0
+ 97a:	66 d0       	rcall	.+204    	; 0xa48 <__udivmodsi4>
+ 97c:	ca 01       	movw	r24, r20
+ 97e:	b9 01       	movw	r22, r18
+ 980:	a5 01       	movw	r20, r10
+ 982:	94 01       	movw	r18, r8
+ 984:	61 d0       	rcall	.+194    	; 0xa48 <__udivmodsi4>
+ 986:	4b 01       	movw	r8, r22
+ 988:	5c 01       	movw	r10, r24
+	int n4 = (num / 600) % 6;		//D(13)
+ 98a:	c7 01       	movw	r24, r14
+ 98c:	b6 01       	movw	r22, r12
+ 98e:	28 e5       	ldi	r18, 0x58	; 88
+ 990:	32 e0       	ldi	r19, 0x02	; 2
+ 992:	40 e0       	ldi	r20, 0x00	; 0
+ 994:	50 e0       	ldi	r21, 0x00	; 0
+ 996:	58 d0       	rcall	.+176    	; 0xa48 <__udivmodsi4>
+ 998:	ca 01       	movw	r24, r20
+ 99a:	b9 01       	movw	r22, r18
+ 99c:	a3 01       	movw	r20, r6
+ 99e:	92 01       	movw	r18, r4
+ 9a0:	53 d0       	rcall	.+166    	; 0xa48 <__udivmodsi4>
+	
+	arr[0] = digit[n1]; arr[1] = digit[n2]; arr[2] = digit[n3] + 0x80; arr[3] = digit[n4];
+ 9a2:	e9 81       	ldd	r30, Y+1	; 0x01
+ 9a4:	fa 81       	ldd	r31, Y+2	; 0x02
+ 9a6:	e4 5e       	subi	r30, 0xE4	; 228
+ 9a8:	fe 4f       	sbci	r31, 0xFE	; 254
+ 9aa:	20 81       	ld	r18, Z
+ 9ac:	e4 e4       	ldi	r30, 0x44	; 68
+ 9ae:	f1 e0       	ldi	r31, 0x01	; 1
+ 9b0:	20 83       	st	Z, r18
+ 9b2:	ad 81       	ldd	r26, Y+5	; 0x05
+ 9b4:	be 81       	ldd	r27, Y+6	; 0x06
+ 9b6:	a4 5e       	subi	r26, 0xE4	; 228
+ 9b8:	be 4f       	sbci	r27, 0xFE	; 254
+ 9ba:	2c 91       	ld	r18, X
+ 9bc:	21 83       	std	Z+1, r18	; 0x01
+ 9be:	d4 01       	movw	r26, r8
+ 9c0:	a4 5e       	subi	r26, 0xE4	; 228
+ 9c2:	be 4f       	sbci	r27, 0xFE	; 254
+ 9c4:	2c 91       	ld	r18, X
+ 9c6:	20 58       	subi	r18, 0x80	; 128
+ 9c8:	22 83       	std	Z+2, r18	; 0x02
+ 9ca:	db 01       	movw	r26, r22
+ 9cc:	a4 5e       	subi	r26, 0xE4	; 228
+ 9ce:	be 4f       	sbci	r27, 0xFE	; 254
+ 9d0:	8c 91       	ld	r24, X
+ 9d2:	83 83       	std	Z+3, r24	; 0x03
+	
+	if ( num< 10 ){
+ 9d4:	8a e0       	ldi	r24, 0x0A	; 10
+ 9d6:	c8 16       	cp	r12, r24
+ 9d8:	d1 04       	cpc	r13, r1
+ 9da:	e1 04       	cpc	r14, r1
+ 9dc:	f1 04       	cpc	r15, r1
+ 9de:	28 f4       	brcc	.+10     	; 0x9ea <Display+0xe8>
+		arr[3] = 0; arr[1] = 0; arr[2] = 0x80;
+ 9e0:	13 82       	std	Z+3, r1	; 0x03
+ 9e2:	11 82       	std	Z+1, r1	; 0x01
+ 9e4:	80 e8       	ldi	r24, 0x80	; 128
+ 9e6:	82 83       	std	Z+2, r24	; 0x02
+ 9e8:	15 c0       	rjmp	.+42     	; 0xa14 <Display+0x112>
+	}
+	else if ( num<60 ){
+ 9ea:	8c e3       	ldi	r24, 0x3C	; 60
+ 9ec:	c8 16       	cp	r12, r24
+ 9ee:	d1 04       	cpc	r13, r1
+ 9f0:	e1 04       	cpc	r14, r1
+ 9f2:	f1 04       	cpc	r15, r1
+ 9f4:	30 f4       	brcc	.+12     	; 0xa02 <Display+0x100>
+		arr[2] = 0x80; arr[3] = 0;
+ 9f6:	e4 e4       	ldi	r30, 0x44	; 68
+ 9f8:	f1 e0       	ldi	r31, 0x01	; 1
+ 9fa:	80 e8       	ldi	r24, 0x80	; 128
+ 9fc:	82 83       	std	Z+2, r24	; 0x02
+ 9fe:	13 82       	std	Z+3, r1	; 0x03
+ a00:	09 c0       	rjmp	.+18     	; 0xa14 <Display+0x112>
+	}
+	else if ( num<600 ){
+ a02:	88 e5       	ldi	r24, 0x58	; 88
+ a04:	c8 16       	cp	r12, r24
+ a06:	82 e0       	ldi	r24, 0x02	; 2
+ a08:	d8 06       	cpc	r13, r24
+ a0a:	e1 04       	cpc	r14, r1
+ a0c:	f1 04       	cpc	r15, r1
+		arr[3] = 0;
+ a0e:	10 f4       	brcc	.+4      	; 0xa14 <Display+0x112>
+ a10:	10 92 47 01 	sts	0x0147, r1	; 0x800147 <arr+0x3>
+	}
+	
+	FND_4(arr);
+ a14:	84 e4       	ldi	r24, 0x44	; 68
+ a16:	91 e0       	ldi	r25, 0x01	; 1
+ a18:	5d df       	rcall	.-326    	; 0x8d4 <FND_4>
+	return arr;
+}
+ a1a:	84 e4       	ldi	r24, 0x44	; 68
+ a1c:	91 e0       	ldi	r25, 0x01	; 1
+ a1e:	28 96       	adiw	r28, 0x08	; 8
+ a20:	0f b6       	in	r0, 0x3f	; 63
+ a22:	f8 94       	cli
+ a24:	de bf       	out	0x3e, r29	; 62
+ a26:	0f be       	out	0x3f, r0	; 63
+ a28:	cd bf       	out	0x3d, r28	; 61
+ a2a:	df 91       	pop	r29
+ a2c:	cf 91       	pop	r28
+ a2e:	ff 90       	pop	r15
+ a30:	ef 90       	pop	r14
+ a32:	df 90       	pop	r13
+ a34:	cf 90       	pop	r12
+ a36:	bf 90       	pop	r11
+ a38:	af 90       	pop	r10
+ a3a:	9f 90       	pop	r9
+ a3c:	8f 90       	pop	r8
+ a3e:	7f 90       	pop	r7
+ a40:	6f 90       	pop	r6
+ a42:	5f 90       	pop	r5
+ a44:	4f 90       	pop	r4
+ a46:	08 95       	ret
+
+00000a48 <__udivmodsi4>:
+ a48:	a1 e2       	ldi	r26, 0x21	; 33
+ a4a:	1a 2e       	mov	r1, r26
+ a4c:	aa 1b       	sub	r26, r26
+ a4e:	bb 1b       	sub	r27, r27
+ a50:	fd 01       	movw	r30, r26
+ a52:	0d c0       	rjmp	.+26     	; 0xa6e <__udivmodsi4_ep>
+
+00000a54 <__udivmodsi4_loop>:
+ a54:	aa 1f       	adc	r26, r26
+ a56:	bb 1f       	adc	r27, r27
+ a58:	ee 1f       	adc	r30, r30
+ a5a:	ff 1f       	adc	r31, r31
+ a5c:	a2 17       	cp	r26, r18
+ a5e:	b3 07       	cpc	r27, r19
+ a60:	e4 07       	cpc	r30, r20
+ a62:	f5 07       	cpc	r31, r21
+ a64:	20 f0       	brcs	.+8      	; 0xa6e <__udivmodsi4_ep>
+ a66:	a2 1b       	sub	r26, r18
+ a68:	b3 0b       	sbc	r27, r19
+ a6a:	e4 0b       	sbc	r30, r20
+ a6c:	f5 0b       	sbc	r31, r21
+
+00000a6e <__udivmodsi4_ep>:
+ a6e:	66 1f       	adc	r22, r22
+ a70:	77 1f       	adc	r23, r23
+ a72:	88 1f       	adc	r24, r24
+ a74:	99 1f       	adc	r25, r25
+ a76:	1a 94       	dec	r1
+ a78:	69 f7       	brne	.-38     	; 0xa54 <__udivmodsi4_loop>
+ a7a:	60 95       	com	r22
+ a7c:	70 95       	com	r23
+ a7e:	80 95       	com	r24
+ a80:	90 95       	com	r25
+ a82:	9b 01       	movw	r18, r22
+ a84:	ac 01       	movw	r20, r24
+ a86:	bd 01       	movw	r22, r26
+ a88:	cf 01       	movw	r24, r30
+ a8a:	08 95       	ret
+
+00000a8c <_exit>:
+ a8c:	f8 94       	cli
+
+00000a8e <__stop_program>:
+ a8e:	ff cf       	rjmp	.-2      	; 0xa8e <__stop_program>
